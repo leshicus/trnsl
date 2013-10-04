@@ -27,7 +27,7 @@ Ext.define('App.view.admin.GridSigngroupV', {
             },
             {
                 text: 'ФИО',
-                itemId: 'columnFIO',
+                itemId: 'columnFio',
                 dataIndex: 'fio'
             }
         ];

@@ -4,6 +4,8 @@ Ext.define('App.model.admin.GridPersonM', {
         {name: 'examid'},
         {name: 'userid'},
         {name: 'balls'},
-        {name: 'result'}
+        {name: 'result'},
+        {name: 'fio'},
+        {name: 'login'}
     ]
 });

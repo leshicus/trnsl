@@ -8,7 +8,7 @@ $success = true;
 
 switch ($act) {
     case 'create':
-        $actid = $data['actid'];
+        /*$actid = $data['actid'];
         $groupnum = $data['groupnum'];
 
         $sql = "
@@ -33,15 +33,21 @@ switch ($act) {
             echo json_encode(
                 array('success' => $success,
                     'message' => $sql));
-        }
+        }*/
         break;
     case 'read':
-        $sql = 'select
-                  actid,
-                  groupnum,
-                  groupid
-		        from `group`
-		        order by actid, groupnum';
+        $sql = "select
+                  examid,
+                  c.userid,
+                  balls,
+                  result,
+                  CONCAT_WS(' ',u.familyname,u.firstname,u.lastname) as fio,
+                  u.login
+		        from `class` c,
+		             `user`  u
+		        where u.userid = c.userid
+
+		        order by fio";
         try {
             $res = $mysqli->query($sql);
             $list=array();
@@ -59,7 +65,7 @@ switch ($act) {
         echo '{rows:'.json_encode($list).'}';
         break;
     case 'update':
-        $actid = $data['actid'];
+        /*$actid = $data['actid'];
         $groupnum = $data['groupnum'];
         $groupid = $data['groupid'];
 
@@ -82,15 +88,17 @@ switch ($act) {
             echo json_encode(
                 array('success' => $success,
                     'message' => $sql));
-        }
+        }*/
 
         break;
     case 'destroy':
-        $groupid = $data['groupid'];
+        $examid = $data['examid'];
+        $userid = $data['userid'];
 
         $sql = "
-            delete from `group`
-            where groupid = '$groupid'
+            delete from `class`
+            where userid = '$userid'
+            and examid = '$examid'
         ";
         try {
             $res = $mysqli->query($sql);

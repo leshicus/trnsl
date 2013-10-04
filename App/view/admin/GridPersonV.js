@@ -5,7 +5,7 @@ Ext.define('App.view.admin.GridPersonV', {
     frame: true,
     flex:1,
     margin: '0 0 0 5',
-    //forceFit: true,
+    forceFit: true,
     store: 'admin.GridPersonS',
     title: 'Сотрудники',
     columnLines: true,
@@ -17,47 +17,30 @@ Ext.define('App.view.admin.GridPersonV', {
             })
         ];
 
-        //this.tbar = buttonSaveDelete;
-
-        var store = Ext.data.StoreManager.lookup('manage.GridActS');
-        var combo = Ext.create('Ext.form.ComboBox', {
-            store:store,
-            valueField:'actid',
-            name:'actid',
-            displayField:'actabbr',
-            listeners: {  // * чтобы при нажатии ENTER не нажималась кнопка Сохранить, а переходило на другую строку
-                afterrender: function () {
-                    var me = this;
-                    me.el.swallowEvent(['keypress', 'keydown' ]);
-                }
-            }
-        });
+        this.tbar = buttonSaveDelete;
 
         this.columns = [
             {
-                text: 'Номер',
-                itemId: 'columnPersonnum',
-                dataIndex: 'groupnum',
-                width:100,
-                editor: {
-                    xtype: 'textarea',
-                    errorSummary: false,
-                    //allowBlank: false,
-                    listeners: {  // * чтобы при нажатии ENTER не нажималась кнопка Сохранить, а переходило на другую строку
-                        afterrender: function () {
-                            var me = this;
-                            me.el.swallowEvent(['keypress', 'keydown' ]);
-                        }
-                    }
-                }
+                text: '№',
+                xtype: 'rownumberer',
+                width: 30
             },
             {
-                text: 'Вид деятельности',
-                itemId: 'columnActid',
-                dataIndex: 'actid',
-                width:200,
-                editor: combo
-                //renderer:renderGridPerson(combo)
+                text: 'ФИО',
+                itemId: 'columnFio',
+                dataIndex: 'fio'
+            },
+            {
+                text: 'Баллы',
+                itemId: 'columnBalls',
+                dataIndex: 'balls',
+                width: 30
+            },
+            {
+                text: 'Результат',
+                itemId: 'columnResult',
+                dataIndex: 'result',
+                width: 30
             }
         ];
         this.callParent(arguments);
