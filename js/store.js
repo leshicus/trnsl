@@ -1,0 +1,247 @@
+// пол
+var sGender=Ext.create('Ext.data.Store',
+{
+	fields:
+	['sex'],
+	data:
+	[
+		{"sex":"Мужской"},
+		{"sex":"Женский"}
+	]
+});
+/* для ответов комбо*/
+var scAnswer=Ext.create('Ext.data.Store',
+{
+	idProperty:'value',
+	fields:
+	[
+		{name:'data'},
+		{name:'value'}
+	],
+	data:
+	[
+		{
+			"data":"да",
+			"value":"1"
+		},
+		{
+			"data":"нет",
+			"value":"0"
+		}
+	]
+});
+/* виды деятельности-------------------------------------*/
+Ext.define('mActivity',
+{
+	extend:'Ext.data.Model',
+	//idProperty:'ACTIVITY_ID',
+	fields: 
+	[
+		{name:'ACTIVITY_ID'},
+		{name:'ACTIVITY_NAME'},
+		{name:'ACTIVITY_ABBR'}
+	]
+});
+var sActivity=Ext.create('Ext.data.JsonStore',
+{
+	model:'mActivity',
+	autoSync:true,
+	autoLoad:false,
+	proxy: 
+	{
+		type:'ajax',
+		api:
+		{
+			read:'php/activity/get.php',
+			create:'php/activity/add.php',
+			update:'php/activity/update.php',
+			destroy:'php/activity/delete.php'
+		},
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		},
+		writer: 
+		{
+			type:'json',
+			writeAllFields:true
+		}
+	}
+});
+/*-----------------------------------------------------*/
+/* предметы--------------------------------------------*/
+Ext.define('mSubject',
+{
+	extend:'Ext.data.Model',
+	fields: 
+	[
+		{name:'SUBJECT_ID'},
+		{name:'SUBJECT_NAME'}
+	]
+});
+var sSubject=Ext.create('Ext.data.JsonStore',
+{
+	model:'mSubject',
+	autoSync:true,
+	autoLoad:false,
+	proxy: 
+	{
+		type:'ajax',
+		api:
+		{
+			read:'php/subject/get.php',
+			create:'php/subject/add.php',
+			update:'php/subject/update.php',
+			destroy:'php/subject/delete.php'
+		},
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		},
+		writer: 
+		{
+			type:'json',
+			writeAllFields:true
+		}
+	},
+	listeners:
+	{
+		add:function(store,index)
+		{
+			var task=new Ext.util.DelayedTask(function()
+			{
+				gDistribution.store.load();
+			});
+			task.delay(1000);
+		},
+		update:function(store,index)
+		{
+			var task=new Ext.util.DelayedTask(function()
+			{
+				gDistribution.store.load();
+			});
+			task.delay(1000);
+		}
+	}
+});
+/*-----------------------------------------------------*/
+/* распределение-------------------------------------*/
+Ext.define('mDistribution',
+{
+	extend:'Ext.data.Model',
+	fields: 
+	[
+		{name:'DISTRIBUTION_ID'},
+		{name:'ACTIVITY_ABBR'},
+		{name:'SUBJECT_NAME'},
+		{name:'QUESTION_PART'}
+	]
+});
+var sDistribution=Ext.create('Ext.data.JsonStore',
+{
+	model:'mDistribution',
+	autoSync:true,
+	autoLoad:false,
+	groupField:'ACTIVITY_ABBR',
+	proxy: 
+	{
+		type:'ajax',
+		api:
+		{
+			read:'php/distribution/get.php',
+			update:'php/distribution/update.php',
+		},
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		},
+		writer: 
+		{
+			type:'json',
+			writeAllFields:true
+		}
+	}
+});
+/*------------------------------------------------*/
+/* вопросы-------------------------------------*/
+Ext.define('mQuestion',
+{
+	extend:'Ext.data.Model',
+	fields: 
+	[
+		{name:'QUESTION_ID'},
+		{name:'QUESTION_TEXT'},
+		{name:'QUESTION_DESCR'},
+		{name:'SUBJECT_ID'}
+	]
+});
+var sQuestion=Ext.create('Ext.data.JsonStore',
+{
+	model:'mQuestion',
+	autoSync:true,
+	autoLoad:false,
+	proxy: 
+	{
+		type:'ajax',
+		api:
+		{
+			read:'php/question/get.php',
+			create:'php/question/add.php',
+			update:'php/question/update.php',
+			destroy:'php/question/delete.php'
+		},
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		},
+		writer: 
+		{
+			type:'json',
+			writeAllFields:true
+		}
+	}
+});
+/*------------------------------------------------*/
+/* ответы-------------------------------------*/
+Ext.define('mAnswer',
+{
+	extend:'Ext.data.Model',
+	fields: 
+	[
+		{name:'ANSWER_ID'},
+		{name:'ANSWER_TEXT'},
+		{name:'ANSWER_RIGHT'},
+		{name:'QUESTION_ID'}
+	]
+});
+var sAnswer=Ext.create('Ext.data.JsonStore',
+{
+	model:'mAnswer',
+	autoSync:true,
+	autoLoad:false,
+	proxy: 
+	{
+		type:'ajax',
+		api:
+		{
+			read:'php/answer/get.php',
+			create:'php/answer/add.php',
+			update:'php/answer/update.php',
+			destroy:'php/answer/delete.php'
+		},
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		},
+		writer: 
+		{
+			type:'json',
+			writeAllFields:true
+		}
+	}
+});

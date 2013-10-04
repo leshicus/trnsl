@@ -1,0 +1,56 @@
+/*------------------------------------------------*/
+/* вопросы-------------------------------------*/
+Ext.define('mQuestion',
+{
+	extend:'Ext.data.Model',
+	fields: 
+	[
+		{name:'QUESTION_ID'},
+		{name:'QUESTION_TEXT'},
+		{name:'QUESTION_DESCR'},
+		{name:'SUBJECT_ID'}
+	]
+});
+var sQuestion=Ext.create('Ext.data.JsonStore',
+{
+	model:'mQuestion',
+	autoLoad:false,
+	proxy: 
+	{
+		type:'ajax',
+		url:'php/testing/get_question.php',
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		}
+	}
+});
+/*------------------------------------------------*/
+/* ответы-------------------------------------*/
+Ext.define('mAnswer',
+{
+	extend:'Ext.data.Model',
+	fields: 
+	[
+		{name:'ANSWER_ID'},
+		{name:'ANSWER_TEXT'},
+		{name:'ANSWER_RIGHT'},
+		{name:'QUESTION_ID'}
+	]
+});
+var sAnswer=Ext.create('Ext.data.JsonStore',
+{
+	model:'mAnswer',
+	autoLoad:false,
+	proxy: 
+	{
+		type:'ajax',
+		url:'php/testing/get_answer.php',
+		reader: 
+		{
+			type:'json',
+			root:'rows'
+		}
+	}
+});

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="transoil" product="MySQL" version="5.5.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )" uuid="77d95072-fc69-45f4-a450-1d97b85e21d9">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/transoil</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>df9b</user-password>
+    <schema-pattern>transoil.*</schema-pattern>
+    <default-schemas>transoil.*</default-schemas>
+    <libraries>
+      <library>
+        <url>jar://$APPLICATION_HOME_DIR$/mysql-connector-java-5.1.26-bin.jar!/</url>
+      </library>
+      <library>
+        <url>file://$APPLICATION_HOME_DIR$/mysql-connector-license.txt</url>
+      </library>
+    </libraries>
+    <schema name="" catalog="transoil"/>
+    <table name="activity" schema="" catalog="transoil" type="TABLE">
+      <column name="actid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="actname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="actnum" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0L3QvtC80LXRgCDQstC40LTQsCDQtNC10Y/RgtC10LvRjNC90L7RgdGC0Lg="/>
+      <column name="actabbr" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12" remarks="0LDQsdCx0YDQtdCy0LjQsNGC0YPRgNCw"/>
+      <primary-key name="PRIMARY" columns="actid"/>
+      <exported-key name="group_ibfk_1" table="group" schema="" catalog="transoil" columns="actid"/>
+    </table>
+    <table name="answer" schema="" catalog="transoil" type="TABLE">
+      <column name="answerid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="questionid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" remarks="aWQg0LLQvtC/0YDQvtGB0LA="/>
+      <column name="answertext" sqlType="VARCHAR" length="4000" precision="0" nullable="false" jdbcType="12" remarks="0YLQtdC60YHRgiDQvtGC0LLQtdGC0LA="/>
+      <column name="correct" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MA==" remarks="0L/RgNC40LfQvdCw0Log0L/RgNCw0LLQuNC70YzQvdC+0YHRgtC4"/>
+      <column name="normdoc" sqlType="VARCHAR" length="4000" precision="0" nullable="false" jdbcType="12" remarks="0YHRgdGL0LvQutCwINC90LAg0L3QvtGA0LzQsNGC0LjQstC90YvQuSDQtNC+0LrRg9C80LXQvdGC"/>
+      <primary-key name="PRIMARY" columns="answerid"/>
+      <foreign-key name="answer_ibfk_1" columns="questionid" ref-table="question" ref-schema="" ref-catalog="transoil" ref-columns="questionid" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="card" schema="" catalog="transoil" type="TABLE">
+      <column name="cardid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0Y3QutC30LDQvNC10L3Rg9C10LzRi9C5"/>
+      <column name="examid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0LrQu9Cw0YHRgQ=="/>
+      <column name="questionid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="cardid"/>
+      <foreign-key name="card_ibfk_1" columns="userid" ref-table="user" ref-schema="" ref-catalog="transoil" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="card_ibfk_2" columns="examid" ref-table="exam" ref-schema="" ref-catalog="transoil" ref-columns="examid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="card_ibfk_3" columns="questionid" ref-table="question" ref-schema="" ref-catalog="transoil" ref-columns="questionid" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="class" schema="" catalog="transoil" type="TABLE">
+      <column name="examid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0Y3QutC30LDQvNC10L0="/>
+      <column name="userid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0Y3QutC30LDQvNC10L3Rg9C10LzRi9C5"/>
+      <column name="balls" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0LHQsNC70LvRiyDQt9CwINGN0LrQt9Cw0LzQtdC9"/>
+      <column name="result" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" def="MA==" remarks="0YDQtdC30YPQu9GM0YLQsNGCICjRgdC00LDQuywg0L3QtSDRgdC00LDQuyk="/>
+      <foreign-key name="class_ibfk_1" columns="examid" ref-table="exam" ref-schema="" ref-catalog="transoil" ref-columns="examid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="class_ibfk_2" columns="userid" ref-table="user" ref-schema="" ref-catalog="transoil" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="exam" schema="" catalog="transoil" type="TABLE">
+      <column name="examid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="examname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" remarks="0L3QsNC30LLQsNC90LjQtSDQutC70LDRgdGB0LA="/>
+      <column name="examdate" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="examid"/>
+      <exported-key name="card_ibfk_2" table="card" schema="" catalog="transoil" columns="examid"/>
+      <exported-key name="class_ibfk_1" table="class" schema="" catalog="transoil" columns="examid"/>
+      <exported-key name="signgroup_ibfk_1" table="signgroup" schema="" catalog="transoil" columns="examid"/>
+    </table>
+    <table name="group" schema="" catalog="transoil" type="TABLE">
+      <column name="groupid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="groupnum" sqlType="VARCHAR" length="5" precision="0" nullable="true" jdbcType="12" remarks="0L3QvtC80LXRgCDQs9GA0YPQv9C/0Ys="/>
+      <column name="actid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0LLQuNC0INC00LXRj9GC0LXQu9GM0L3QvtGB0YLQuA=="/>
+      <primary-key name="PRIMARY" columns="groupid"/>
+      <foreign-key name="group_ibfk_1" columns="actid" ref-table="activity" ref-schema="" ref-catalog="transoil" ref-columns="actid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="question_ibfk_1" table="question" schema="" catalog="transoil" columns="groupid"/>
+      <exported-key name="speciality_ibfk_1" table="speciality" schema="" catalog="transoil" columns="groupid"/>
+    </table>
+    <table name="journal" schema="" catalog="transoil" type="TABLE">
+      <column name="jid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="jdate_in" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91"/>
+      <column name="userid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GM"/>
+      <primary-key name="PRIMARY" columns="jid"/>
+      <foreign-key name="journal_ibfk_1" columns="userid" ref-table="user" ref-schema="" ref-catalog="transoil" ref-columns="userid" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="know" schema="" catalog="transoil" type="TABLE">
+      <column name="knowid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="knowname" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12" remarks="0L7QsdC70LDRgdGC0Ywg0LfQvdCw0L3QuNGP"/>
+      <column name="knownum" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="knowid"/>
+      <exported-key name="question_ibfk_2" table="question" schema="" catalog="transoil" columns="knowid"/>
+      <index name="knowname" unique="true" columns="knowname"/>
+    </table>
+    <table name="question" schema="" catalog="transoil" type="TABLE">
+      <column name="questionid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="groupid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0L3QvtC80LXRgCDQs9GA0YPQv9C/0Ys="/>
+      <column name="knowid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0L3QvtC80LXRgCDQvtCx0LvQsNGB0YLQuCDQt9C90LDQvdC40Lk="/>
+      <column name="questiontext" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="questionid"/>
+      <foreign-key name="question_ibfk_1" columns="groupid" ref-table="group" ref-schema="" ref-catalog="transoil" ref-columns="groupid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="question_ibfk_2" columns="knowid" ref-table="know" ref-schema="" ref-catalog="transoil" ref-columns="knowid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="answer_ibfk_1" table="answer" schema="" catalog="transoil" columns="questionid"/>
+      <exported-key name="card_ibfk_3" table="card" schema="" catalog="transoil" columns="questionid"/>
+    </table>
+    <table name="role" schema="" catalog="transoil" type="TABLE">
+      <column name="roleid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="rolename" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="roleid"/>
+    </table>
+    <table name="signgroup" schema="" catalog="transoil" type="TABLE">
+      <column name="signgroupid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="examid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" remarks="0LrQu9Cw0YHRgQ=="/>
+      <column name="familyname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="firstname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <column name="lastname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="signgroupid"/>
+      <foreign-key name="signgroup_ibfk_1" columns="examid" ref-table="exam" ref-schema="" ref-catalog="transoil" ref-columns="examid" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="speciality" schema="" catalog="transoil" type="TABLE">
+      <column name="specid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="specname" sqlType="VARCHAR" length="200" precision="0" nullable="true" jdbcType="12"/>
+      <column name="groupid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="specid"/>
+      <foreign-key name="speciality_ibfk_1" columns="groupid" ref-table="group" ref-schema="" ref-catalog="transoil" ref-columns="groupid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="user_ibfk_1" table="user" schema="" catalog="transoil" columns="specid"/>
+    </table>
+    <table name="user" schema="" catalog="transoil" type="TABLE">
+      <column name="userid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="familyname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" remarks="0YTQsNC80LjQu9C40Y8="/>
+      <column name="firstname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" remarks="0LjQvNGP"/>
+      <column name="lastname" sqlType="VARCHAR" length="100" precision="0" nullable="true" jdbcType="12" remarks="0L7RgtGH0LXRgdGC0LLQvg=="/>
+      <column name="roles" sqlType="VARCHAR" length="50" precision="0" nullable="true" jdbcType="12" remarks="0YHQv9C40YHQvtC6INGA0L7Qu9C10Lk="/>
+      <column name="specid" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="password" sqlType="VARCHAR" length="20" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="userid"/>
+      <foreign-key name="user_ibfk_1" columns="specid" ref-table="speciality" ref-schema="" ref-catalog="transoil" ref-columns="specid" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="card_ibfk_1" table="card" schema="" catalog="transoil" columns="userid"/>
+      <exported-key name="class_ibfk_2" table="class" schema="" catalog="transoil" columns="userid"/>
+      <exported-key name="journal_ibfk_1" table="journal" schema="" catalog="transoil" columns="userid"/>
+    </table>
+  </data-source>
+</component>

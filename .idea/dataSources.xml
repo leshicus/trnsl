@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3719126221">
+    <data-source source="LOCAL" name="transoil" product="MySQL" version="5.5.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )" uuid="77d95072-fc69-45f4-a450-1d97b85e21d9">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/transoil</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>df9b</user-password>
+      <schema-pattern>transoil.*</schema-pattern>
+      <default-schemas>transoil.*</default-schemas>
+      <libraries>
+        <library>
+          <url>jar://$APPLICATION_HOME_DIR$/mysql-connector-java-5.1.26-bin.jar!/</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_HOME_DIR$/mysql-connector-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

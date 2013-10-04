@@ -1,0 +1,117 @@
+<?
+require_once("../db_connect.php");
+require_once('../PhpConsole.php');
+
+$act = $_REQUEST['act'];
+$data = json_decode(file_get_contents('php://input'), true);
+$success = true;
+
+switch ($act) {
+    case 'create':
+        $questiontext = $data['questiontext'];
+        $groupid = $data['groupid'];
+        $knowid = $data['knowid'];
+
+        $sql = "
+            insert into question(
+              questiontext,
+              groupid,
+              knowid
+            )values(
+              '$questiontext',
+              '$groupid',
+              '$knowid'
+            );
+        ";
+        try {
+            $res = $mysqli->query($sql);
+        } catch (Exception $e) {
+            $success = false;
+        }
+
+        if($success){
+            echo '{rows:' . json_encode(
+                array('questionid' => $mysqli->insert_id)) . '}';
+        }else{
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }
+        break;
+    case 'read':
+        $sql = "select
+                  questionid,
+                  questiontext,
+                  groupid,
+                  knowid
+		        from question";
+
+        try {
+            $res = $mysqli->query($sql);
+            $list=array();
+            while ($row = $res->fetch_array(MYSQLI_ASSOC)) {
+                foreach ($row as $k => $v)
+                    $arr[$k]= $v;
+                array_push($list, $arr);
+            }
+        } catch (Exception $e) {
+            $success = false;
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }
+        echo '{rows:'.json_encode($list).'}';
+        break;
+    case 'update':
+        $questionid = $data['questionid'];
+        $questiontext = $data['questiontext'];
+        $groupid = $data['groupid'];
+        $knowid = $data['knowid'];
+
+        $sql = "
+            update question
+            set questiontext = '$questiontext',
+                groupid = '$groupid',
+                knowid = '$knowid'
+            where questionid = '$questionid'
+        ";
+        try {
+            $res = $mysqli->query($sql);
+        } catch (Exception $e) {
+            $success = false;
+        }
+        if($success){
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }else{
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }
+
+        break;
+    case 'destroy':
+        $questionid = $data['questionid'];
+
+        $sql = "
+            delete from question
+            where questionid = '$questionid'
+        ";
+        try {
+            $res = $mysqli->query($sql);
+        } catch (Exception $e) {
+            $success = false;
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }
+        break;
+    default:
+        echo "default";
+};
+
+if ($mysqli)
+    $mysqli->close();
+
+?>
