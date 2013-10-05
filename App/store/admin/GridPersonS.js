@@ -1,8 +1,8 @@
 Ext.define('App.store.admin.GridPersonS', {
     extend: 'Ext.data.Store',
     model: 'App.model.admin.GridPersonM',
-    //autoSync: true,
-    autoLoad: true,
+    autoSync: true,
+    //autoLoad: true,
     proxy: {
         type: 'ajax',
         api: {

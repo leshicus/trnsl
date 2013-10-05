@@ -9,21 +9,12 @@ $success = true;
 switch ($act) {
     case 'create':
         $examid = $data['examid'];
-        $familyname = $data['familyname'];
-        $firstname = $data['firstname'];
-        $lastname = $data['lastname'];
 
         $sql = "
             insert into `signgroup`(
-              examid,
-              familyname,
-              firstname,
-              lastname
+              examid
             )values(
-              '$examid',
-              '$familyname',
-              '$firstname',
-              '$lastname'
+              '$examid'
             );
         ";
         try {
@@ -73,10 +64,14 @@ switch ($act) {
         $firstname = $data['firstname'];
         $lastname = $data['lastname'];
 
+        if(!$familyname) $familyname = null;
+        if(!$firstname) $firstname = null;
+        if(!$lastname) $lastname = null;
+
         $sql = "
             update `signgroup`
             set familyname = '$familyname',
-                firstname = '$firstname'
+                firstname = '$firstname',
                 lastname = '$lastname'
             where signgroupid = '$signgroupid'
         ";

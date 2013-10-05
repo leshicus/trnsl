@@ -1,21 +1,40 @@
 <?
+session_start();
 require_once("../db_connect.php");
 require_once('../include.php');
 
 $act = $_REQUEST['act'];
 $data = json_decode(file_get_contents('php://input'), true);
 $success = true;
+$userid = $_SESSION['userid'];
+
 
 switch ($act) {
     case 'create':
-        $examdate = $data['examdate'];
+        $fio = '';
+        $curdate = date('d.m.Y H:i');
+        // * определим ФИО наблюдателя
+        $sql_fio = "select
+          CONCAT_WS(' ',u.familyname,u.firstname,u.lastname) as fio
+        from `user` u
+		where u.userid = '$userid'";
+        try {
+            $res_fio = $mysqli->query($sql_fio);
+            $row = $res_fio->fetch_row();
+            $fio = $row[0];
+        } catch (Exception $e) {
+            $success = false;
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }
 
         $sql = "
             insert into exam(
               examdate,
               userid
             )values(
-              '$examdate',
+              '".$curdate."',
               '$userid'
             );
         ";
@@ -27,7 +46,10 @@ switch ($act) {
 
         if ($success) {
             echo '{rows:' . json_encode(
-                    array('examid' => $mysqli->insert_id)) . '}';
+                    array('examid' => $mysqli->insert_id,
+                          'userid' => $userid,
+                          'examdate' => $curdate,
+                          'fio' => $fio  )) . '}';
         } else {
             echo json_encode(
                 array('success' => $success,
@@ -35,17 +57,26 @@ switch ($act) {
         }
         break;
     case 'read':
+        $dateFrom = $_REQUEST['dateFindFrom'];
+        $dateTo = $_REQUEST['dateFindTo'];
+        $where = "";
+        if($dateFrom)
+            $where.= " and DATE_FORMAT(e.examdate,'%d.%m.%Y') >= DATE_FORMAT('" . $dateFrom . "','%d.%m.%Y') ";
+        if($dateTo)
+            $where.= " and DATE_FORMAT(e.examdate,'%d.%m.%Y') <= DATE_FORMAT('" . $dateTo . "','%d.%m.%Y') ";
+        if(!$dateFrom && !$dateTo)
+            $where.= " and DATE_FORMAT(e.examdate,'%d.%m.%Y') = DATE_FORMAT(CURDATE(),'%d.%m.%Y') ";
+
         $sql = "select
                   examid,
-                  examdate,
+                  DATE_FORMAT(examdate, '%d.%m.%Y %H:%i') as examdate,
                   e.userid,
                   CONCAT_WS(' ',u.familyname,u.firstname,u.lastname) as fio,
                   u.login
 		        from exam   e,
 		             `user` u
-		        where u.userid = e.userid
-		        /*and e.examdate = CURDATE()*/
-		        order by examdate, u.familyname";
+		        where u.userid = e.userid ".$where.
+		        " order by examdate, u.familyname";
         try {
             $res = $mysqli->query($sql);
             $list = array();

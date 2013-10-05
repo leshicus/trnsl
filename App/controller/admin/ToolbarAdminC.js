@@ -80,6 +80,15 @@
                     }
                     layout.activeItem.cascade(cascadeRemoveGrid);
                     layout.activeItem.add(panel);
+
+                    var gridPerson = Ext.ComponentQuery.query('gridPerson')[0],
+                        gridSigngroup = Ext.ComponentQuery.query('gridSigngroup')[0];
+                    gridPerson.store.filter(function () {
+                        return false
+                    });
+                    gridSigngroup.store.filter(function () {
+                        return false
+                    });
                 }
             }
         });

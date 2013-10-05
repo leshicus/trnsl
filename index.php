@@ -1,4 +1,5 @@
-﻿<?
+<?
+session_start();
 include('php/include.php');
 ?>
 <head>

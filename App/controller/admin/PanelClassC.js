@@ -20,6 +20,12 @@
         {
             ref: 'gridExam',
             selector: 'gridExam'
+        },{
+            ref: 'gridSigngroup',
+            selector: 'gridSigngroup'
+        },{
+            ref: 'gridPerson',
+            selector: 'gridPerson'
         }
     ],
 
@@ -30,6 +36,92 @@
         console.log('PanelClassC init');
 
         this.control({
+            'gridExam': {
+                cellclick: function (gridview, td, cellIndex, record, tr, rowIndex, e, eOpts) {
+                    console.log('gridExam cellclick');
+
+                    var gridSigngroup = this.getGridSigngroup(),
+                        gridPerson = this.getGridPerson(),
+                        gridExam = this.getGridExam(),
+                        selection = gridExam.getSelected(),
+                        examid = selection.get('examid');
+                    gridSigngroup.store.clearFilter();
+                    gridPerson.store.clearFilter();
+                    gridSigngroup.store.filter(function (rec) {
+                        if (rec.get('examid') == examid)
+                            return true;
+                    });
+                    gridPerson.store.filter(function (rec) {
+                        if (rec.get('examid') == examid)
+                            return true;
+                    });
+                }
+            },
+            'gridExam button[action=add]': {
+                click: function (button) {
+                    console.log('action=add');
+
+                    var grid = button.up('grid'),
+                        newRecord = Ext.create('App.model.admin.GridExamM');
+                    grid.store.insert(0, newRecord);
+                    /*grid.store.sync({
+                        failure: function () {
+                            Ext.MessageBox.alert('Ошибка', 'Экзамен не добавлен');
+                        },
+                        scope: this
+                    });*/
+                }
+            },
+            'gridExam button[action=delete]': {
+                click: function (button) {
+                    console.log('action=delete');
+
+                    var grid = button.up('grid'),
+                        selection = grid.getSelected();
+                    grid.store.remove(selection);
+                    /*grid.store.sync({
+                        failure: function () {
+                            Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
+                        },
+                        scope: this
+                    });*/
+                }
+            },
+            'gridExam #dateFindFrom': {
+                specialkey: function (field, e) {
+                    if (e.getKey() == e.DELETE) {
+                        field.reset();
+                    }
+                    if (e.getKey() == e.ENTER) {
+                        var grid = field.up('grid'),
+                            dateFindTo = grid.down('#dateFindTo');
+                        grid.store.load({
+                            params: {
+                                dateFindFrom: field.getValue(),
+                                dateFindTo: dateFindTo.getValue()
+                            }
+                        });
+                    }
+                }
+            },
+            'gridExam #dateFindTo': {
+                specialkey: function (field, e) {
+                    if (e.getKey() == e.DELETE) {
+                        field.reset();
+                    }
+                    if (e.getKey() == e.ENTER) {
+                        var grid = field.up('grid'),
+                            dateFindFrom = grid.down('#dateFindFrom');
+                        grid.store.load({
+                            params: {
+                                dateFindFrom: dateFindFrom.getValue(),
+                                dateFindTo: field.getValue()
+                            }
+                        });
+                    }
+                }
+            },
+
             '#refreshGridExamS': {
                 click: function (button) {
                     console.log('click refreshGridExamS');
@@ -37,8 +129,59 @@
                     var gridExam = this.getGridExam();
                     gridExam.store.load();
                 }
-            }
+            },
+            'gridSigngroup button[action=add]': {
+                click: function (button) {
+                    console.log('action=add');
 
+                    var grid = button.up('grid'),
+                        newRecord = Ext.create('App.model.admin.GridSigngroupM'),
+                        selectionExam = this.getGridExam().getSelected();
+
+                    if (selectionExam) {
+                        var examid = selectionExam.get('examid');
+                        newRecord.set('examid', examid);
+                        grid.store.insert(0, newRecord);
+                        /*grid.store.sync({
+                            failure: function () {
+                                Ext.MessageBox.alert('Ошибка', 'Подписант не добавлен');
+                            },
+                            scope: this
+                        });*/
+                    }
+
+                }
+            },
+            'gridSigngroup button[action=delete]': {
+                click: function (button) {
+                    console.log('action=delete');
+
+                    var grid = button.up('grid'),
+                        selection = grid.getSelected();
+                    grid.store.remove(selection);
+                    /*grid.store.sync({
+                        failure: function () {
+                            Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
+                        },
+                        scope: this
+                    });*/
+                }
+            },
+            'gridPerson button[action=delete]': {
+                click: function (button) {
+                    console.log('action=delete');
+
+                    var grid = button.up('grid'),
+                        selection = grid.getSelected();
+                    grid.store.remove(selection);
+                    /*grid.store.sync({
+                        failure: function () {
+                            Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
+                        },
+                        scope: this
+                    });*/
+                }
+            }
         });
         console.log('PanelClassC end');
     }

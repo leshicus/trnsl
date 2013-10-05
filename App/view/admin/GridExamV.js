@@ -6,16 +6,17 @@ Ext.define('App.view.admin.GridExamV', {
     flex: 1,
     margin: '0 0 5 0',
     forceFit: true,
+    //store: Ext.create('App.store.admin.GridExamS'),
     store: 'admin.GridExamS',
     title: 'Экзамены',
     columnLines: true,
     initComponent: function () {
         console.log('GridExam init');
-
-        this.plugins = [ Ext.create('Ext.grid.plugin.RowEditing', {
+//TODO делать со временем
+        /*this.plugins = [ Ext.create('Ext.grid.plugin.RowEditing', {
             clicksToEdit: 2
         })
-        ];
+        ];*/
 
         this.tools = [
             {
@@ -25,27 +26,29 @@ Ext.define('App.view.admin.GridExamV', {
             }
         ]
 
-        this.tbar = buttonSaveDelete;
+        this.tbar = Ext.create('Ext.toolbar.Toolbar');
+        this.tbar.add(buttonSaveDelete);
+        this.tbar.add(buttonDateFromTo);
 
         this.columns = [
             {
                 text: 'Номер',
                 itemId: 'columnExamid',
                 dataIndex: 'examid',
-                width: 60
+                width: 50
             },
             {
                 text: 'Дата',
                 itemId: 'columnExamdate',
                 dataIndex: 'examdate',
-                format: 'd.m.Y',
+                format: 'd.m.Y H:i',
                 width: 100
             },
             {
                 text: 'ФИО наблюдателя',
                 itemId: 'columnFio',
                 dataIndex: 'fio',
-                width: 200
+                width: 230
             }
         ];
         this.callParent(arguments);

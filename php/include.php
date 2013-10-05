@@ -18,5 +18,5 @@ $extjs421_neptune = '
 
 $initPassword = 'init';
 $initRole = 3;
-$userid = 0;
+
 ?>

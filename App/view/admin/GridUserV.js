@@ -123,8 +123,8 @@ Ext.define('App.view.admin.GridUserV', {
             {
                 text: 'Блокирован',
                 itemId: 'columnStatus',
-                width: 50,
-                format:'d.m.Y',
+                width: 80,
+                format:'d.m.Y H:i',
                 dataIndex: 'enddate',
                 editor: {
                     xtype: 'datefield',
@@ -196,7 +196,7 @@ Ext.define('App.view.admin.GridUserV', {
                 if(records.length){
                     var block = records[0].get('enddate');
                     console.log(block);
-                    if(block != '0000-00-00'){
+                    if(block != '00.00.0000 00:00' && block){
                         self.getMenuBlock().disable();
                         self.getMenuUnblock().enable();
                     }else{

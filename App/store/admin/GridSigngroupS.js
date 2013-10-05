@@ -1,8 +1,8 @@
 Ext.define('App.store.admin.GridSigngroupS', {
     extend: 'Ext.data.Store',
     model: 'App.model.admin.GridSigngroupM',
-    //autoSync: true,
-    autoLoad: true,
+    autoSync: true,
+    //autoLoad: true,
     proxy: {
         type: 'ajax',
         api: {

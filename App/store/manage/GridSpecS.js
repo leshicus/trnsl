@@ -2,7 +2,7 @@ Ext.define('App.store.manage.GridSpecS', {
     extend: 'Ext.data.Store',
     model: 'App.model.manage.GridSpecM',
     //autoSync: true,
-    //autoLoad: true,
+    autoLoad: true,
     proxy: {
         type: 'ajax',
         api: {

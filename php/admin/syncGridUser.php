@@ -36,22 +36,22 @@ switch ($act) {
         }*/
         break;
     case 'read':
-        $sql = 'select
+        $sql = "select
                   userid,
                   familyname,
                   firstname,
                   lastname,
                   roleid,
                   login,
-                  begindate,
-                  enddate,
+                  DATE_FORMAT(begindate, '%d.%m.%Y %H:%i') as begindate,
+                  DATE_FORMAT(enddate, '%d.%m.%Y %H:%i') as enddate,
                   u.specid,
                   s.groupid,
                   password
 		        from `user` u,
 		             speciality s
 		        where s.specid = u.specid
-		        order by familyname, firstname, lastname, begindate';
+		        order by familyname, firstname, lastname, begindate";
         try {
             $res = $mysqli->query($sql);
             $list=array();
@@ -100,7 +100,7 @@ switch ($act) {
                     roleid = '$roleid',
                     specid = '$specid',
                     password = '$password',
-                    enddate = ".$enddate."
+                    enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
                 where userid = '$userid'
             ";
         }else{
@@ -111,7 +111,7 @@ switch ($act) {
                     lastname = '$lastname',
                     roleid = '$roleid',
                     specid = '$specid',
-                    enddate = '$enddate'
+                    enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
                 where userid = '$userid'
             ";
         }

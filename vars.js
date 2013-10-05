@@ -7,7 +7,7 @@ var dataSystem = [
 ]
 
 var userid;
-
+var nullDate = '00.00.0000 00:00';
 
 // чтобы нормально значения в комбо отображались
 comboRenderer = function (combo) {
@@ -29,12 +29,29 @@ renderGridQuestion = function (value, metaData, record, rowIndex, colIndex, stor
 };
 
 columnStatus = function (value, metaData, record, rowIndex, colIndex, store, view) {
-    if (value && value != '0000-00-00') {
+    if (value && value != nullDate) {
         metaData.style += 'background:rgb(243, 169, 202);';
         return value;
     }
-}
+};
 
+renderGridGroup = function (combo) {
+    return function (value) {
+        var record = combo.findRecord(combo.valueField || combo.displayField, value);
+        return record ? record.get(combo.displayField) : combo.valueNotFoundText;
+    }
+};
+
+renderResult = function (value, metaData) {
+    if (value == 1) {
+        metaData.style += 'color:green; font-weight: bold;';
+        return 'сдал';
+    } else {
+        metaData.style += 'color:red; font-weight: bold;';
+        return 'не сдал';
+    }
+
+};
 
 function CopyAutoLoadStore(store1) {
     var records = [],
@@ -45,13 +62,13 @@ function CopyAutoLoadStore(store1) {
     });
 
     var store2 = Ext.create(storeClass.getName(), {
-        model:store1.model.prototype.modelName
+        model: store1.model.prototype.modelName
     });
 
     return store2;
 };
 
-function CopyStore (store1) {
+function CopyStore(store1) {
     var records = [],
         storeClass = Ext.getClass(store1);
 
@@ -60,7 +77,7 @@ function CopyStore (store1) {
     });
 
     var store2 = Ext.create(storeClass.getName(), {
-        model:store1.model.prototype.modelName
+        model: store1.model.prototype.modelName
     });
 
     store2.add(records);
@@ -87,7 +104,7 @@ cascadeRemoveGrid = function (item) {
     }
 };
 
-var buttonSaveDelete =[
+var buttonSaveDelete = [
     {
         text: 'Добавить',
         action: 'add',
@@ -101,9 +118,23 @@ var buttonSaveDelete =[
     }
 ];
 
-renderGridGroup = function (combo) {
-    return function (value) {
-        var record = combo.findRecord(combo.valueField || combo.displayField, value);
-        return record ? record.get(combo.displayField) : combo.valueNotFoundText;
+var buttonDateFromTo = [
+    {
+        xtype: 'datefield',
+        itemId: 'dateFindFrom',
+        emptyText: 'Дата c',
+        width: 100,
+        format: 'd.m.Y'
+    },
+    '-',
+    {
+        xtype: 'datefield',
+        itemId: 'dateFindTo',
+        emptyText: 'Дата по',
+        width: 100,
+        format: 'd.m.Y'
     }
-};
+];
+
+
+

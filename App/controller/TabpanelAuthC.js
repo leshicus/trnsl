@@ -71,36 +71,45 @@
                                     viewport = button.up('viewport'),
                                     layout = viewport.getLayout();
                                 userid = 5;
+                                Ext.Ajax.request({
+                                    url:'php/setUserid.php?userid='+userid
+                                });
                                 if(subsystem){
                                     switch (subsystem){
-                                        case 1:
+                                        case 1: // * Тестирование
 
                                             break;
-                                        case 2:
+                                        case 2:  // * Администрирование
                                             var treeUser = Ext.StoreManager.lookup('admin.TreeUserS'),
                                                 storeRole = Ext.StoreManager.lookup('admin.ComboRoleS'),
                                                 gridUser = Ext.StoreManager.lookup('admin.GridUserS'),
-                                                storeSpec = Ext.data.StoreManager.lookup('manage.GridSpecS');
+                                                //storeSpec = Ext.data.StoreManager.lookup('manage.GridSpecS'),
+                                                gridExam = Ext.StoreManager.lookup('admin.GridExamS'),
+                                                gridSigngroup = Ext.StoreManager.lookup('admin.GridSigngroupS'),
+                                                gridPerson = Ext.StoreManager.lookup('admin.GridPersonS');
                                             treeUser.load();
                                             gridUser.load();
-                                            storeSpec.load();
+                                            //storeSpec.load();
                                             storeRole.load();
+                                            gridExam.load();
+                                            gridSigngroup.load();
+                                            gridPerson.load();
                                             break;
-                                        case 3:
+                                        case 3:  // * Ведение
                                             var storeTreeQuestion = Ext.StoreManager.lookup('manage.TreeQuestionS'),
                                                 storeTreeSpec = Ext.StoreManager.lookup('manage.TreeSpecS'),
                                                 storeGridAct = Ext.StoreManager.lookup('manage.GridActS'),
                                                 storeGridAnswer = Ext.StoreManager.lookup('manage.GridAnswerS'),
                                                 storeGridGroup = Ext.StoreManager.lookup('manage.GridGroupS'),
-                                                storeGridQuestion = Ext.StoreManager.lookup('manage.GridQuestionS'),
-                                                storeGridSpec = Ext.data.StoreManager.lookup('manage.GridSpecS');
+                                                storeGridQuestion = Ext.StoreManager.lookup('manage.GridQuestionS');
+                                                //storeGridSpec = Ext.data.StoreManager.lookup('manage.GridSpecS');
                                             storeTreeQuestion.load();
                                             storeTreeSpec.load();
                                             storeGridAct.load();
                                             storeGridAnswer.load();
                                             storeGridGroup.load();
                                             storeGridQuestion.load();
-                                            storeGridSpec.load();
+                                            //storeGridSpec.load();
                                             break;
                                         default:
                                             break;

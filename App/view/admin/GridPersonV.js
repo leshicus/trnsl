@@ -6,18 +6,25 @@ Ext.define('App.view.admin.GridPersonV', {
     flex:1,
     margin: '0 0 0 5',
     forceFit: true,
+    //store: Ext.create('App.store.admin.GridPersonS'),
     store: 'admin.GridPersonS',
     title: 'Сотрудники',
     columnLines: true,
     initComponent: function () {
         console.log('GridPerson init');
 
-        this.plugins = [ Ext.create('Ext.grid.plugin.RowEditing', {
+        /*this.plugins = [ Ext.create('Ext.grid.plugin.RowEditing', {
                 clicksToEdit: 2
             })
-        ];
+        ];*/
 
-        this.tbar = buttonSaveDelete;
+        this.tbar = [
+            {
+                text: 'Удалить',
+                action: 'delete',
+                iconCls: 'icon_delete'
+            }
+        ];
 
         this.columns = [
             {
@@ -40,7 +47,8 @@ Ext.define('App.view.admin.GridPersonV', {
                 text: 'Результат',
                 itemId: 'columnResult',
                 dataIndex: 'result',
-                width: 30
+                width: 30,
+                renderer:renderResult
             }
         ];
         this.callParent(arguments);

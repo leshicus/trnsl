@@ -1,5 +1,4 @@
-﻿Ext.Loader.setPath('Ext.ux', '../ext-4.2.1/examples/ux');
-
+Ext.Loader.setPath('Ext.ux', '../ext-4.2.1/examples/ux');
 /*
 Ext.onReady(function () {
     Ext.Loader.setConfig({

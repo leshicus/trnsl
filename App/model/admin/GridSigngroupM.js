@@ -3,6 +3,8 @@ Ext.define('App.model.admin.GridSigngroupM', {
     fields:[
         {name: 'signgroupid'},
         {name: 'examid'},
-        {name: 'fio'}
+        {name: 'familyname'},
+        {name: 'lastname'},
+        {name: 'firstname'}
     ]
 });

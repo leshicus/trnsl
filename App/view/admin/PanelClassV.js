@@ -13,11 +13,11 @@ Ext.define('App.view.admin.PanelClassV', {
         console.log('PanelClassV init');
 
         var gridExam = Ext.create('App.view.admin.GridExamV', {
-                    flex: 1
+                    //flex: 1
                 }
             ),
             gridSigngroup = Ext.create('App.view.admin.GridSigngroupV', {
-                    flex: 1
+                    //flex: 1
                 }
             ),
             gridPerson = Ext.create('App.view.admin.GridPersonV', {
@@ -31,7 +31,7 @@ Ext.define('App.view.admin.PanelClassV', {
                     align: 'stretch'
                 },
                 border: false,
-                width: 400,
+                width: 500,
                 items: [
                     gridExam,
                     gridSigngroup

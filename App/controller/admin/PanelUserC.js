@@ -134,7 +134,8 @@
                                 return ((x < 10 ? '0' : '') + x)
                             };
                             var now = new Date(),
-                                date = [now.getFullYear(), f(now.getMonth() + 1), f(now.getDate())].join('-');
+                                date = [f(now.getDate()), f(now.getMonth() + 1), now.getFullYear()].join('.')
+                                    + ' ' + now.getHours() + ':' + now.getMinutes();
                             record.set('enddate', date);
                             grid.store.sync();
                         }
@@ -149,7 +150,7 @@
                         record = grid.getSelected();
                     Ext.Msg.confirm('Разблокировка пользователя', 'Разблокировать учетную запись пользователя?', function (button) {
                         if (button == 'yes') {
-                            record.set('enddate', '0000-00-00');
+                            record.set('enddate', nullDate);
                             grid.store.sync();
                         }
                     }, this);
