@@ -75,7 +75,7 @@
                 }
             },
             'gridUser': {
-                edit: function (editor, context) {
+                /*edit: function (editor, context) {
                     console.log('edit');
                     context.grid.store.sync({
                         failure: function () {
@@ -83,7 +83,7 @@
                         },
                         scope: this
                     });
-                },
+                },*/
                 // * чтобы контекстное меню показывалось
                 itemcontextmenu: function (view, rec, node, index, e) {
                     e.stopEvent();
@@ -97,13 +97,17 @@
 
                     var grid = button.up('grid'),
                         selection = grid.getSelected();
-                    grid.store.remove(selection);
-                    grid.store.sync({
+                    // * удаляем несколько пемеченных записей
+                    Ext.each(selection, function (item) {
+                        grid.store.remove(item);
+                    });
+                    grid.store.load();
+                    /*grid.store.sync({
                         failure: function () {
                             Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
                         },
                         scope: this
-                    });
+                    });*/
                 }
             },
             '#menuResetPassword': {

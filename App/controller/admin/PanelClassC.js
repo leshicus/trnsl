@@ -20,10 +20,12 @@
         {
             ref: 'gridExam',
             selector: 'gridExam'
-        },{
+        },
+        {
             ref: 'gridSigngroup',
             selector: 'gridSigngroup'
-        },{
+        },
+        {
             ref: 'gridPerson',
             selector: 'gridPerson'
         }
@@ -65,11 +67,11 @@
                         newRecord = Ext.create('App.model.admin.GridExamM');
                     grid.store.insert(0, newRecord);
                     /*grid.store.sync({
-                        failure: function () {
-                            Ext.MessageBox.alert('Ошибка', 'Экзамен не добавлен');
-                        },
-                        scope: this
-                    });*/
+                     failure: function () {
+                     Ext.MessageBox.alert('Ошибка', 'Экзамен не добавлен');
+                     },
+                     scope: this
+                     });*/
                 }
             },
             'gridExam button[action=delete]': {
@@ -77,14 +79,22 @@
                     console.log('action=delete');
 
                     var grid = button.up('grid'),
-                        selection = grid.getSelected();
-                    grid.store.remove(selection);
+                        selection = grid.getSelected(),
+                        examid = selection.get('examid'),
+                        gridPerson = this.getGridPerson(),
+                        storePerson = gridPerson.store,
+                        recordUser = storePerson.findRecord('examid', examid);
+                    if (examid && !recordUser) {
+                        grid.store.remove(selection);
+                    } else {
+                        Ext.example.msg('Не удалено', 'В классе находятся сотрудники');
+                    }
                     /*grid.store.sync({
-                        failure: function () {
-                            Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
-                        },
-                        scope: this
-                    });*/
+                     failure: function () {
+                     Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
+                     },
+                     scope: this
+                     });*/
                 }
             },
             'gridExam #dateFindFrom': {
@@ -143,11 +153,11 @@
                         newRecord.set('examid', examid);
                         grid.store.insert(0, newRecord);
                         /*grid.store.sync({
-                            failure: function () {
-                                Ext.MessageBox.alert('Ошибка', 'Подписант не добавлен');
-                            },
-                            scope: this
-                        });*/
+                         failure: function () {
+                         Ext.MessageBox.alert('Ошибка', 'Подписант не добавлен');
+                         },
+                         scope: this
+                         });*/
                     }
 
                 }
@@ -160,11 +170,19 @@
                         selection = grid.getSelected();
                     grid.store.remove(selection);
                     /*grid.store.sync({
-                        failure: function () {
-                            Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
-                        },
-                        scope: this
-                    });*/
+                     failure: function () {
+                     Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
+                     },
+                     scope: this
+                     });*/
+                }
+            },
+            'gridPerson': {
+                // * чтобы контекстное меню показывалось
+                itemcontextmenu: function (view, rec, node, index, e) {
+                    e.stopEvent();
+                    view.ownerCt.contextMenu.showAt(e.getXY());
+                    return false;
                 }
             },
             'gridPerson button[action=delete]': {
@@ -173,13 +191,47 @@
 
                     var grid = button.up('grid'),
                         selection = grid.getSelected();
-                    grid.store.remove(selection);
+
+                    // * удаляем несколько пемеченных записей
+                    Ext.each(selection, function (item) {
+                        var result = item.get('result');
+                        if (!result) {
+                            grid.store.remove(item);
+                        } else {
+                            Ext.example.msg('Не удалено', 'Сотрудник проходил тест');
+                        }
+                    });
+
+
                     /*grid.store.sync({
-                        failure: function () {
-                            Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
-                        },
-                        scope: this
-                    });*/
+                     failure: function () {
+                     Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
+                     },
+                     scope: this
+                     });*/
+                }
+            },
+            '#menuReg': {
+                click: function (button) {
+                    console.log('click menuReg');
+
+                    var grid = this.getGridPerson(),
+                        selection = grid.getSelected();
+                    Ext.each(selection, function (item) {
+                        item.set('reg', 1);
+                    });
+
+                }
+            },
+            '#menuUnreg': {
+                click: function (button) {
+                    console.log('click menuUnreg');
+
+                    var grid = this.getGridPerson(),
+                        selection = grid.getSelected();
+                    Ext.each(selection, function (item) {
+                        item.set('reg', 0);
+                    });
                 }
             }
         });

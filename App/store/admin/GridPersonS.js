@@ -16,7 +16,8 @@ Ext.define('App.store.admin.GridPersonS', {
             root: 'rows'
         },
         writer: {
-            type: 'json'
+            type: 'json',
+            allowSingle:false
         },
         appendId: false,
         actionMethods: {

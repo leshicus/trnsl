@@ -87,9 +87,9 @@ foreach ($actList as $i => $rowAct) {
     $out .= '{
                 "id": ' . $rowAct['actid'] . ',
                 "text": "' . $rowAct['actabbr'] . '",
-                "leaf": false,
+                "leaf": false/*,
                 "expanded": true,
-                "loaded" : true';
+                "loaded" : true*/';
     // * перебор групп
     if (count($groupList)) {
         $out .= ',
@@ -103,9 +103,9 @@ foreach ($actList as $i => $rowAct) {
                 $out .= '{
                     "id": "' . $rowAct['actid'] . '-' . $rowGroup['groupid'] . '",
                     "text": "Группа № ' . $rowAct['actnum'] . '.' . $rowGroup['groupnum'] . '",
-                    "leaf": false,
+                    "leaf": false/*,
                     "expanded": true,
-                    "loaded" : true';
+                    "loaded" : true*/';
                 // * перебор областей знаний
                 if (count($knowList)) {
                     $out .= ',
@@ -119,10 +119,10 @@ foreach ($actList as $i => $rowAct) {
                                 "id": "' . $rowAct['actid'] . '-' . $rowGroup['groupid'] . '-' . $rowKnow['knowid'] . '",
                                 "text": "ОЗ № ' . $rowKnow['knownum'] . ' (' . $rowKnow['knowname'] . ')' . '",
                                 "leaf": true,
-                                "expanded": true,
+                                //"expanded": true,
                                 "groupid": '. $rowGroup['groupid'] . ',
-                                "knowid": '. $rowKnow['knowid'] . ',
-                                "loaded" : true}';
+                                "knowid": '. $rowKnow['knowid'] . '/*,
+                                "loaded" : true*/}';
                         $cntKnow++;
                     }
                     $out .= ']';

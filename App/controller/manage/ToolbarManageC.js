@@ -94,6 +94,7 @@
 
                     var viewport = me.up('viewport'),
                         layout = viewport.getLayout();
+                    layout.activeItem.cascade(cascadeRemoveGrid);
                     layout.setActiveItem(0);
                 }
             }

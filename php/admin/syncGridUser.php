@@ -69,57 +69,59 @@ switch ($act) {
         echo '{rows:'.json_encode($list).'}';
         break;
     case 'update':
-        $userid = $data['userid'];
-        $familyname = $data['familyname'];
-        $firstname = $data['firstname'];
-        $lastname = $data['lastname'];
-        $roleid = $data['roleid'];
-        $login = $data['login'];
-        $begindate = $data['begindate'];
-        $enddate = $data['enddate'];
-        $specid = $data['specid'];
-        $password = $data['password'];
+        foreach ($data as $row) {
+            $userid = $row['userid'];
+            $familyname = $row['familyname'];
+            $firstname = $row['firstname'];
+            $lastname = $row['lastname'];
+            $roleid = $row['roleid'];
+            $login = $row['login'];
+            $begindate = $row['begindate'];
+            $enddate = $row['enddate'];
+            $specid = $row['specid'];
+            $password = $row['password'];
 
-        if (!$userid) $userid = null;
-        if (!$familyname) $familyname = null;
-        if (!$firstname) $firstname = null;
-        if (!$lastname) $lastname = null;
-        if (!$roleid) $roleid = null;
-        if (!$login) $login = null;
-        if (!$begindate) $begindate = null;
-        if (!$enddate) $enddate = null;
-        if (!$specid) $specid = null;
+            if (!$userid) $userid = null;
+            if (!$familyname) $familyname = null;
+            if (!$firstname) $firstname = null;
+            if (!$lastname) $lastname = null;
+            if (!$roleid) $roleid = null;
+            if (!$login) $login = null;
+            if (!$begindate) $begindate = null;
+            if (!$enddate) $enddate = null;
+            if (!$specid) $specid = null;
 
-        if(!$password){
-            $password = $initPassword;
-            $sql = "
-                update `user`
-                set familyname = '$familyname',
-                    firstname = '$firstname',
-                    lastname = '$lastname',
-                    roleid = '$roleid',
-                    specid = '$specid',
-                    password = '$password',
-                    enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
-                where userid = '$userid'
+            if(!$password){
+                $password = $initPassword;
+                $sql = "
+                    update `user`
+                    set familyname = '$familyname',
+                        firstname = '$firstname',
+                        lastname = '$lastname',
+                        roleid = '$roleid',
+                        specid = '$specid',
+                        password = '$password',
+                        enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
+                    where userid = '$userid'
             ";
-        }else{
-            $sql = "
-                update `user`
-                set familyname = '$familyname',
-                    firstname = '$firstname',
-                    lastname = '$lastname',
-                    roleid = '$roleid',
-                    specid = '$specid',
-                    enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
-                where userid = '$userid'
+            }else{
+                $sql = "
+                    update `user`
+                    set familyname = '$familyname',
+                        firstname = '$firstname',
+                        lastname = '$lastname',
+                        roleid = '$roleid',
+                        specid = '$specid',
+                        enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
+                    where userid = '$userid'
             ";
-        }
+            }
 
-        try {
-            $res = $mysqli->query($sql);
-        } catch (Exception $e) {
-            $success = false;
+            try {
+                $res = $mysqli->query($sql);
+            } catch (Exception $e) {
+                $success = false;
+            }
         }
         if($success){
             echo json_encode(
@@ -133,20 +135,22 @@ switch ($act) {
 
         break;
     case 'destroy':
-        $userid = $data['userid'];
-        if (!$userid) $userid = null;
+        foreach ($data as $row) {
+            $userid = $row['userid'];
+            if (!$userid) $userid = null;
 
-        $sql = "
-            delete from `user`
-            where userid = '$userid'
-        ";
-        try {
-            $res = $mysqli->query($sql);
-        } catch (Exception $e) {
-            $success = false;
-            echo json_encode(
-                array('success' => $success,
-                    'message' => $sql));
+            $sql = "
+                delete from `user`
+                where userid = '$userid'
+            ";
+            try {
+                $res = $mysqli->query($sql);
+            } catch (Exception $e) {
+                $success = false;
+                echo json_encode(
+                    array('success' => $success,
+                        'message' => $sql));
+            }
         }
         break;
     default:

@@ -63,9 +63,9 @@ foreach ($actList as $i => $rowAct) {
     $out .= '{
                 "id": ' . $rowAct['actid'] . ',
                 "text": "' . $rowAct['actabbr'] . '",
-                "leaf": false,
-                "expanded": true,
-                "loaded" : true';
+                "leaf": false
+                //"expanded": true,
+                /*"loaded" : true*/';
     // * перебор групп
     if (count($groupList)) {
         $out .= ',
@@ -80,9 +80,9 @@ foreach ($actList as $i => $rowAct) {
                     "id": "' . $rowAct['actid'] . '-' . $rowGroup['groupid'] . '",
                     "text": "Группа № ' . $rowAct['actnum'] . '.' . $rowGroup['groupnum'] . '",
                     "leaf": true,
-                    "expanded": true,
+                    //"expanded": true
                     "groupid": ' .$rowGroup['groupid'].',
-                    "loaded" : true}';
+                    /*"loaded" : true*/}';
                 $cntGroup++;
             }
         }

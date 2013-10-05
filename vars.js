@@ -46,9 +46,12 @@ renderResult = function (value, metaData) {
     if (value == 1) {
         metaData.style += 'color:green; font-weight: bold;';
         return 'сдал';
-    } else {
+    } else if (value == 0) {
         metaData.style += 'color:red; font-weight: bold;';
         return 'не сдал';
+    }else {
+        metaData.style += 'color:blue; font-weight: bold;';
+        return 'не сдавал';
     }
 
 };

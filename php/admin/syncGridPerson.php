@@ -42,7 +42,8 @@ switch ($act) {
                   balls,
                   result,
                   CONCAT_WS(' ',u.familyname,u.firstname,u.lastname) as fio,
-                  u.login
+                  u.login,
+                  reg
 		        from `class` c,
 		             `user`  u
 		        where u.userid = c.userid
@@ -65,20 +66,27 @@ switch ($act) {
         echo '{rows:'.json_encode($list).'}';
         break;
     case 'update':
-        /*$actid = $data['actid'];
-        $groupnum = $data['groupnum'];
-        $groupid = $data['groupid'];
+        foreach ($data as $row) {
+            $userid = $row['userid'];
+            $examid = $row['examid'];
+            $reg = $row['reg'];
 
-        $sql = "
-            update `group`
-            set actid = '$actid',
-                groupnum = '$groupnum'
-            where groupid = '$groupid'
-        ";
-        try {
-            $res = $mysqli->query($sql);
-        } catch (Exception $e) {
-            $success = false;
+            if (!$userid) $userid = null;
+            if (!$examid) $examid = null;
+            if (!$reg) $reg = null;
+
+            $sql = "
+                    update `class`
+                    set reg = '$reg'
+                    where userid = '$userid'
+                    and examid = '$examid'
+            ";
+
+            try {
+                $res = $mysqli->query($sql);
+            } catch (Exception $e) {
+                $success = false;
+            }
         }
         if($success){
             echo json_encode(
@@ -88,22 +96,29 @@ switch ($act) {
             echo json_encode(
                 array('success' => $success,
                     'message' => $sql));
-        }*/
+        }
 
         break;
     case 'destroy':
-        $examid = $data['examid'];
-        $userid = $data['userid'];
-
-        $sql = "
-            delete from `class`
-            where userid = '$userid'
-            and examid = '$examid'
-        ";
-        try {
-            $res = $mysqli->query($sql);
-        } catch (Exception $e) {
-            $success = false;
+        foreach ($data as $row) {
+            $examid = $row['examid'];
+            $userid = $row['userid'];
+            $sql = "
+                delete from `class`
+                where userid = '$userid'
+                and examid = '$examid'
+            ";
+            try {
+                $res = $mysqli->query($sql);
+            } catch (Exception $e) {
+                $success = false;
+            }
+        }
+        if($success){
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $sql));
+        }else{
             echo json_encode(
                 array('success' => $success,
                     'message' => $sql));

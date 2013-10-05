@@ -1,7 +1,7 @@
 Ext.define('App.store.admin.GridUserS', {
     extend: 'Ext.data.Store',
     model: 'App.model.admin.GridUserM',
-    //autoSync: true,
+    autoSync: true,
     //autoLoad: true,
     proxy: {
         type: 'ajax',
@@ -16,7 +16,8 @@ Ext.define('App.store.admin.GridUserS', {
             root: 'rows'
         },
         writer: {
-            type: 'json'
+            type: 'json',
+            allowSingle:false
         },
         appendId: false,
         actionMethods: {

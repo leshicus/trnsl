@@ -2,6 +2,10 @@ Ext.define('App.view.admin.ToolbarAdminV', {
     extend: 'Ext.toolbar.Toolbar',
     alias: 'widget.toolbarAdmin',
     itemId: 'toolbarAdmin',
+    defaults    : {
+        toggleGroup    : "admin",
+        allowDepress    : false
+    },
     initComponent: function () {
         console.log('ToolbarAdminV init');
 

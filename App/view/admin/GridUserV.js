@@ -17,6 +17,15 @@ Ext.define('App.view.admin.GridUserV', {
             clicksToEdit: 2
         })
         ];
+
+        this.tools = [
+            {
+                type: 'refresh',
+                itemId: 'refreshGridUserS',
+                tooltip: 'Обновить'
+            }
+        ];
+
         this.tbar = [
             {
                 text: 'Удалить',
@@ -24,6 +33,11 @@ Ext.define('App.view.admin.GridUserV', {
                 iconCls: 'icon_delete'
             }
         ];
+
+        this.selModel = Ext.create('Ext.selection.CheckboxModel', {
+            injectCheckbox:0,
+            mode:'MULTI'
+        });
 
         var comboSpec = Ext.create('Ext.form.ComboBox', {
             store: 'manage.GridSpecS',
@@ -137,40 +151,7 @@ Ext.define('App.view.admin.GridUserV', {
                     }
                 },
                 renderer: columnStatus
-            }/*,
-            {
-                text: 'Пароль',
-                xtype: 'actioncolumn',
-                width: 40,
-                align: 'center',
-                sortable: false,
-                items: [
-                    {
-                        icon: '/ext-4.2.1/examples/shared/icons/fam/delete.gif',
-                        itemId:'delete_password',
-                        tooltip: 'Сбросить пароль на начальный'
-                    }
-                ]
-            },
-            {
-                text: 'Пароль',
-                xtype: 'actioncolumn',
-                width: 40,
-                align: 'center',
-                sortable: false,
-                items: [
-                    {
-                        iconCls: 'icon_delete',
-                        itemId:'icon_delete',
-                        tooltip: 'Сбросить пароль на начальный'
-                    },
-                    {
-                        icon: '/ext-4.2.1/examples/shared/icons/fam/delete.gif',
-                        itemId:'icon_sell',
-                        tooltip: 'Sell stock'
-                    }
-                ]
-            }*/
+            }
         ];
 
         this.contextMenu = Ext.create('Ext.menu.Menu', {
@@ -217,10 +198,7 @@ Ext.define('App.view.admin.GridUserV', {
     getSelected: function () {
         var sm = this.getSelectionModel();
         var rs = sm.getSelection();
-        if (rs.length) {
-            return rs[0];
-        }
-        return null;
+        return rs;
     },
     getMenuResetPassword:function () {
         return this.contextMenu.query('#menuResetPassword')[0];
