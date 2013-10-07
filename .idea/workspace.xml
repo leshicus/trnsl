@@ -88,7 +88,7 @@
     <file path="$PROJECT_DIR$/../zamzav/App/view/Viewport.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1379669622796" ignored="false" />
     <file path="$PROJECT_DIR$/../zamzav/include.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380877473960" ignored="false" />
     <file path="/getSource.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1379667528265" ignored="false" />
-    <file path="$PROJECT_DIR$/../warehouse/App/view/Viewport.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380969478907" ignored="false" />
+    <file path="$PROJECT_DIR$/../warehouse/App/view/Viewport.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381149666016" ignored="false" />
     <file path="$PROJECT_DIR$/../warehouse/App/view/GridMovementsV.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1379670983925" ignored="false" />
     <file path="/GridMovementsV.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1379670942299" ignored="false" />
     <file path="$PROJECT_DIR$/../warehouse/App/view/GridBalanceMovementsV.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1379671446198" ignored="false" />
@@ -110,7 +110,7 @@
     <file path="/changePassword.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380361947511" ignored="false" />
     <file path="/syncGridUser.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380986403993" ignored="false" />
     <file path="/ToolbarAdminC.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380966937314" ignored="false" />
-    <file path="/PanelUserC.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380986237936" ignored="false" />
+    <file path="/PanelUserC.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381148978220" ignored="false" />
     <file path="$PROJECT_DIR$/../warehouse/App/view/FormMovements.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380547931682" ignored="false" />
     <file path="$PROJECT_DIR$/../warehouse/App/controller/GridReasonC.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380540638845" ignored="false" />
     <file path="$PROJECT_DIR$/../nagruzka/App/controller/StreamGridEditWindow.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380540743460" ignored="false" />
@@ -145,6 +145,8 @@
     <file path="/GridMovementsC.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380961933614" ignored="false" />
     <file path="/ToolbarAdminV.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380981797724" ignored="false" />
     <file path="/GridPersonM.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1380987258893" ignored="false" />
+    <file path="$PROJECT_DIR$/../warehouse/php/syncGridMovements.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381145172718" ignored="false" />
+    <file path="/syncGridMovements.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381145114385" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,22 +170,40 @@
     <favorites_list name="transoil" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5234681">
+    <splitter split-orientation="horizontal" split-proportion="0.589309">
       <split-first>
         <leaf>
-          <file leaf-file-name="PanelClassC.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelClassC.js">
+          <file leaf-file-name="GridUserV.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/App/view/admin/GridUserV.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="224" column="14" selection-start="8285" selection-end="8285" vertical-scroll-proportion="0.0">
+                <state line="178" column="22" selection-start="6016" selection-end="6016" vertical-scroll-proportion="0.85103786">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GridPersonV.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="PanelClassC.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelClassC.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="221" column="23" selection-start="8146" selection-end="8251" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GridPersonV.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/App/view/admin/GridPersonV.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="98" column="53" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.75213677">
+                <state line="98" column="53" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PanelUserC.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelUserC.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="153" column="42" selection-start="5667" selection-end="5667" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -193,19 +213,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="GridUserV.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/App/view/admin/GridUserV.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="17" selection-start="610" selection-end="610" vertical-scroll-proportion="0.16117217">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="syncGridUser.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="syncGridUser.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/admin/syncGridUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="133" column="9" selection-start="2034" selection-end="4395" vertical-scroll-proportion="-23.0">
+                <state line="105" column="14" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.5862944">
                   <folding />
                 </state>
               </provider>
@@ -214,7 +225,7 @@
           <file leaf-file-name="syncGridPerson.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/php/admin/syncGridPerson.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="36" selection-start="2176" selection-end="2176" vertical-scroll-proportion="-11.225806">
+                <state line="79" column="36" selection-start="2176" selection-end="2176" vertical-scroll-proportion="-38.903225">
                   <folding />
                 </state>
               </provider>
@@ -249,13 +260,13 @@
         <option value="$PROJECT_DIR$/php/manage/getTreeQuestion.php" />
         <option value="$PROJECT_DIR$/App/store/admin/GridPersonS.js" />
         <option value="$PROJECT_DIR$/App/store/admin/GridUserS.js" />
-        <option value="$PROJECT_DIR$/App/controller/admin/PanelUserC.js" />
         <option value="$PROJECT_DIR$/php/admin/syncGridUser.php" />
-        <option value="$PROJECT_DIR$/App/view/admin/GridUserV.js" />
         <option value="$PROJECT_DIR$/App/model/admin/GridPersonM.js" />
         <option value="$PROJECT_DIR$/php/admin/syncGridPerson.php" />
         <option value="$PROJECT_DIR$/App/controller/admin/PanelClassC.js" />
         <option value="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
+        <option value="$PROJECT_DIR$/App/controller/admin/PanelUserC.js" />
+        <option value="$PROJECT_DIR$/App/view/admin/GridUserV.js" />
       </list>
     </option>
   </component>
@@ -944,13 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/store/admin/GridUserS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="116" selection-end="116" vertical-scroll-proportion="0.08058608">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/store/admin/GridExamS.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -986,44 +990,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelUserC.js">
+    <entry file="file://$PROJECT_DIR$/php/admin/syncGridPerson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="20" selection-start="3289" selection-end="3399" vertical-scroll-proportion="0.5702076">
+        <state line="79" column="36" selection-start="2176" selection-end="2176" vertical-scroll-proportion="-38.903225">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/admin/syncGridUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="9" selection-start="2034" selection-end="4395" vertical-scroll-proportion="-23.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/admin/syncGridPerson.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="36" selection-start="2176" selection-end="2176" vertical-scroll-proportion="-11.225806">
+        <state line="105" column="14" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.5862944">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelClassC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="14" selection-start="8285" selection-end="8285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/view/admin/GridUserV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="610" selection-end="610" vertical-scroll-proportion="0.16117217">
+        <state line="221" column="23" selection-start="8146" selection-end="8251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/view/admin/GridPersonV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="53" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.75213677">
+        <state line="98" column="53" selection-start="2935" selection-end="2935" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/store/admin/GridUserS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="116" selection-end="116" vertical-scroll-proportion="0.07932692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelUserC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="42" selection-start="5667" selection-end="5667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/view/admin/GridUserV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="22" selection-start="6016" selection-end="6016" vertical-scroll-proportion="0.85103786">
           <folding />
         </state>
       </provider>

@@ -176,7 +176,7 @@ Ext.define('App.view.admin.GridUserV', {
             selectionchange:function (sm, records) {
                 if(records.length){
                     var block = records[0].get('enddate');
-                    console.log(block);
+                    //console.log(block);
                     if(block != '00.00.0000 00:00' && block){
                         self.getMenuBlock().disable();
                         self.getMenuUnblock().enable();

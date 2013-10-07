@@ -101,7 +101,7 @@
                     Ext.each(selection, function (item) {
                         grid.store.remove(item);
                     });
-                    grid.store.load();
+                    //grid.store.load();
                     /*grid.store.sync({
                         failure: function () {
                             Ext.MessageBox.alert('Ошибка', 'Пользователь не удален');
@@ -115,11 +115,13 @@
                     console.log('click menuResetPassword');
 
                     var grid = this.getGridUser(),
-                        record = grid.getSelected();
+                        selection = grid.getSelected();
                     Ext.Msg.confirm('Сброс пароля', 'Сбросить пароль на начальный?', function (button) {
                         if (button == 'yes') {
-                            record.set("password", null);
-                            grid.store.sync();
+                            Ext.each(selection, function (item) {
+                                item.set('password', null);
+                            });
+                            //grid.store.sync();
                         }
                     }, this);
 
@@ -130,7 +132,7 @@
                     console.log('click menuBlock');
 
                     var grid = this.getGridUser(),
-                        record = grid.getSelected();
+                        selection = grid.getSelected();
                     Ext.Msg.confirm('Блокировка пользователя', 'Заблокировать учетную запись пользователя?', function (button) {
                         if (button == 'yes') {
                             // * преобразование даты в удобочитаемый формат
@@ -140,8 +142,10 @@
                             var now = new Date(),
                                 date = [f(now.getDate()), f(now.getMonth() + 1), now.getFullYear()].join('.')
                                     + ' ' + now.getHours() + ':' + now.getMinutes();
-                            record.set('enddate', date);
-                            grid.store.sync();
+                            Ext.each(selection, function (item) {
+                                item.set('enddate', date);
+                            });
+                            //grid.store.sync();
                         }
                     }, this);
                 }
@@ -151,11 +155,13 @@
                     console.log('click menuUnblock');
 
                     var grid = this.getGridUser(),
-                        record = grid.getSelected();
+                        selection = grid.getSelected();
                     Ext.Msg.confirm('Разблокировка пользователя', 'Разблокировать учетную запись пользователя?', function (button) {
                         if (button == 'yes') {
-                            record.set('enddate', nullDate);
-                            grid.store.sync();
+                            Ext.each(selection, function (item) {
+                                item.set('enddate', nullDate);
+                            });
+                            //grid.store.sync();
                         }
                     }, this);
 
