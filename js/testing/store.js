@@ -18,7 +18,7 @@ var sQuestion=Ext.create('Ext.data.JsonStore',
 	proxy: 
 	{
 		type:'ajax',
-		url:'php/testing/get_question.php',
+		url:'php_old/testing/get_question.php',
 		reader: 
 		{
 			type:'json',

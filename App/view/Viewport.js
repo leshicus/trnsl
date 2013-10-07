@@ -28,7 +28,7 @@
                 ]
             },
             {
-                id: 'card-1-test',
+                id: 'card-1-user',
                 defaults: {
                     border: false
                 },
@@ -37,7 +37,7 @@
                     align: 'stretch'
                 },
                 items: [
-                    {xtype: 'toolbarAdmin'}
+                    {xtype: 'toolbarUser'}
                 ]
             },
             {

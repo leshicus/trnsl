@@ -1,7 +1,7 @@
-﻿Ext.define('App.controller.admin.ToolbarAdminC', {
+﻿Ext.define('App.controller.user.ToolbarUserC', {
     extend: 'Ext.app.Controller',
     views: [
-        'admin.ToolbarAdminV'
+        'user.ToolbarUserV'
     ],
     models: [
 
@@ -11,8 +11,8 @@
     ],
     refs: [
         {
-            ref: 'toolbarAdmin',
-            selector: 'toolbarAdmin'
+            ref: 'toolbarUser',
+            selector: 'toolbarUser'
         }
     ],
 
@@ -20,28 +20,14 @@
         console.log('ToolbarC init');
 
         this.control({
-            'toolbarAdmin #userMI': {
+            'toolbarUser #testMI': {
                 click: function (me, e, eOpts) {
-                    console.log('click userMI');
+                    console.log('click testMI');
 
-                    var toolbarAdmin = me.up('toolbarAdmin'),
-                        viewport = me.up('viewport'),
-                        panel = Ext.ComponentQuery.query('panelUser')[0],
-                        storeUser = Ext.StoreManager.lookup('admin.GridUserS'),
-                        treeUser = Ext.StoreManager.lookup('admin.TreeUserS'),
-                        layout = viewport.getLayout();
-                    storeUser.filter(function () {
-                        return false;
-                    });
-                    if (!panel) {
-                        panel = Ext.create('App.view.admin.PanelUserV');
-                    }
-                    treeUser.getRootNode().expand(true);
-                    layout.activeItem.cascade(cascadeRemoveGrid);
-                    layout.activeItem.add(panel);
+
                 }
             },
-            'toolbarAdmin #mainMI': {
+            'toolbarUser #mainMI': {
                 click: function (me, e, eOpts) {
                     console.log('click mainMI');
 
@@ -50,46 +36,12 @@
                     layout.activeItem.cascade(cascadeRemoveGrid);
                     layout.setActiveItem(0);
                 }
-            }, /*,
-             'toolbarAdmin #journalMI': {
-             click: function (me, e, eOpts) {
-             console.log('click specialityMI');
-
-             var toolbarAdmin = me.up('toolbarAdmin'),
-             panel = Ext.ComponentQuery.query('panelSpec')[0],
-             storeSpec = Ext.StoreAdminr.lookup('manage.GridSpecS'),
-             viewport = me.up('viewport'),
-             layout = viewport.getLayout();
-             storeSpec.filter(function(){return false;});
-             if (!panel) {
-             panel = Ext.create('App.view.manage.PanelSpecV');
-             }
-             layout.activeItem.cascade(cascadeRemoveGrid);
-             layout.activeItem.add(panel);
-             }
-             }*/
-            'toolbarAdmin #classMI': {
+            },
+            'toolbarUser #selfMI': {
                 click: function (me, e, eOpts) {
-                    console.log('click classMI');
+                    console.log('click selfMI');
 
-                    var toolbarAdmin = me.up('toolbarAdmin'),
-                        viewport = me.up('viewport'),
-                        panel = Ext.ComponentQuery.query('panelClass')[0],
-                        layout = viewport.getLayout();
-                    if (!panel) {
-                        panel = Ext.create('App.view.admin.PanelClassV');
-                    }
-                    layout.activeItem.cascade(cascadeRemoveGrid);
-                    layout.activeItem.add(panel);
 
-                    var gridPerson = Ext.ComponentQuery.query('gridPerson')[0],
-                        gridSigngroup = Ext.ComponentQuery.query('gridSigngroup')[0];
-                    gridPerson.store.filter(function () {
-                        return false
-                    });
-                    gridSigngroup.store.filter(function () {
-                        return false
-                    });
                 }
             }
         });
