@@ -1,4 +1,4 @@
-﻿<?
+<?
 require_once("db_connect.php");
 require_once("include.php");
 
@@ -10,7 +10,7 @@ $comboSpeciality = $_REQUEST["comboSpeciality"];
 $textPassword = $_REQUEST["textPassword"];
 $success = true;
 
-$message = 'Вы зарегистрировались';
+$message = 'Вы зарегистрировались.';
 
 // * проверим, что все необходимые поля заполнены
 if (!$textLogin || !$textFamily || !$textName || !$comboSpeciality || !$textPassword) {
@@ -18,7 +18,7 @@ if (!$textLogin || !$textFamily || !$textName || !$comboSpeciality || !$textPass
     $message = 'Не все поля заполнены';
 } else {
     // * проверим, что пароль не начальный
-    if ($textPassword == $initPassword) {
+    if (strtoupper($textPassword) == strtoupper($initPassword)) {
         $success = false;
         $message = 'Не допустимый пароль: ' . $initPassword;
     } else {
@@ -69,7 +69,7 @@ if (!$textLogin || !$textFamily || !$textName || !$comboSpeciality || !$textPass
                       '$comboSpeciality',
                       '$textPassword',
                       '$textLogin',
-                      DATE_FORMAT(CURDATE(), '%d.%m.%Y'),
+                      DATE_FORMAT(CURDATE(), '%Y-%m-%d'),
                       '$initRole'
                     );
                 ";
@@ -89,11 +89,6 @@ if (!$textLogin || !$textFamily || !$textName || !$comboSpeciality || !$textPass
         }
     }
 }
-
-
-
-
-
 
 if ($success) {
     echo json_encode(

@@ -70,6 +70,7 @@ Ext.define('App.view.admin.GridPersonV', {
         ];
 
         this.contextMenu = Ext.create('Ext.menu.Menu', {
+            plain:true,
             items:[
                 {
                     text:'Зарегистрировать',

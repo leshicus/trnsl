@@ -155,6 +155,7 @@ Ext.define('App.view.admin.GridUserV', {
         ];
 
         this.contextMenu = Ext.create('Ext.menu.Menu', {
+            plain:true,
             items:[
                 {
                     text:'Сбросить пароль',

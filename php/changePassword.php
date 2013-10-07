@@ -14,7 +14,7 @@ if (!$textLogin || !$textOldPassword || !$textNewPassword) {
     $message = 'Не все поля заполнены';
 } else {
     // * проверим, что пароль не начальный
-    if ($textNewPassword == $initPassword) {
+    if (strtoupper($textNewPassword) == strtoupper($initPassword)) {
         $success = false;
         $message = 'Не допустимый пароль: ' . $initPassword;
     } else {

@@ -1,4 +1,4 @@
-﻿<?
+<?
 	$mysqli = new mysqli("localhost","root","1","transoil");
 
 	if ($mysqli->connect_errno) {
