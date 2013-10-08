@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/view/user/ToolbarUserV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" afterPath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/Viewport.js" afterPath="$PROJECT_DIR$/App/view/Viewport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/testing/main.js" afterPath="$PROJECT_DIR$/js/testing/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/testing/store.js" afterPath="$PROJECT_DIR$/js/testing/store.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="transoil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,6 +151,7 @@
     <file path="/syncGridMovements.php" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381152308581" ignored="false" />
     <file path="$PROJECT_DIR$/../warehouse/App/model/GridMovementsM.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381151692311" ignored="false" />
     <file path="/ToolbarUserC.js" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381160248522" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" time="1381220178576" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +208,7 @@
           <file leaf-file-name="Viewport.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/App/view/Viewport.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="21" selection-start="556" selection-end="556" vertical-scroll-proportion="0.052884616">
+                <state line="42" column="13" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.55528843">
                   <folding />
                 </state>
               </provider>
@@ -226,7 +221,7 @@
           <file leaf-file-name="syncGridUser.php" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/php/admin/syncGridUser.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="111" column="47" selection-start="3685" selection-end="3685" vertical-scroll-proportion="0.9213198">
+                <state line="92" column="0" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.39086294">
                   <folding />
                 </state>
               </provider>
@@ -1087,13 +1082,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/include.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="880" selection-end="893" vertical-scroll-proportion="0.5025381">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="28" selection-start="63" selection-end="63" vertical-scroll-proportion="0.055837564">
@@ -1126,7 +1114,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/admin/syncGridUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="47" selection-start="3685" selection-end="3685" vertical-scroll-proportion="0.9213198">
+        <state line="92" column="0" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.39086294">
           <folding />
         </state>
       </provider>
@@ -1215,9 +1203,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/view/Viewport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="556" selection-end="556" vertical-scroll-proportion="0.052884616">
+        <state line="42" column="13" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.55528843">
           <folding />
         </state>
       </provider>
