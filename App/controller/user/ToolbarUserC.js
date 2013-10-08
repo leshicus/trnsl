@@ -24,7 +24,19 @@
                 click: function (me, e, eOpts) {
                     console.log('click testMI');
 
+                    var toolbarUser = me.up('toolbarUser'),
+                        viewport = me.up('viewport'),
+                        panel = Ext.ComponentQuery.query('panelTest')[0],
+                        layout = viewport.getLayout();
+                    if (!panel) {
+                        panel = Ext.create('App.view.user.PanelTestV');
+                    }
+                    var comboExam = panel.down('#comboExam'),
+                        storeExam = comboExam.store;
+                    storeExam.load();
 
+                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.add(panel);
                 }
             },
             'toolbarUser #mainMI': {

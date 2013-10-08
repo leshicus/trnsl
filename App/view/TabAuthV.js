@@ -57,7 +57,7 @@ Ext.define('App.view.TabAuthV', {
                 name: 'comboSystem',
                 queryMode: 'local',
                 editable: false,
-                value:2,
+                value:1,
                 valueField: 'id',
                 displayField: 'name',
                 allowBlank: false,

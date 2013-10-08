@@ -12,7 +12,7 @@ $userid = $_SESSION['userid'];
 switch ($act) {
     case 'create':
         $fio = '';
-        $curdate = date('d.m.Y H:i');
+        $curdate = date('Y.m.d H:i');
         // * определим ФИО наблюдателя
         $sql_fio = "select
           CONCAT_WS(' ',u.familyname,u.firstname,u.lastname) as fio
