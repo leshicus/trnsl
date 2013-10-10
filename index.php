@@ -2,6 +2,7 @@
 session_start();
 include('php/include.php');
 ?>
+<html meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <head>
     <title>Тестирование</title>
     <?echo $extjs421_neptune;?>

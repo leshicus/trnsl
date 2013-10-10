@@ -60,10 +60,10 @@ Ext.define('App.view.admin.GridPersonV', {
                 renderer:function (value, metaData) {
                     if (value == 1) {
                         metaData.style += 'color:green; font-weight: bold;';
-                        return 'зарегистрирован';
+                        return regString;
                     } else if (value == 0 || value == null){
                         metaData.style += 'color:red; font-weight: bold;';
-                        return 'не зарегистрирован';
+                        return unregString;
                     }
                 }
             }

@@ -6,6 +6,9 @@ var dataSystem = [
     [3, "Ведение"]
 ]
 
+var regString = 'зарегистрирован',
+    unregString = 'не зарегистрирован';
+
 var userid;
 var nullDate = '00.00.0000 00:00';
 

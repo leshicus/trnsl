@@ -67,8 +67,17 @@ Ext.define('App.view.user.PanelTestV', {
                 fieldLabel:'Выберите экзамен'
             },
             {
+                xtype:'textfield',
+                fieldLabel:'Статус',
+                itemId:'textStatus',
+                labelAlign:'right',
+                labelWidth:70,
+                value:'',
+                readOnly:true
+            },
+            {
                 xtype:'button',
-                action: 'add',
+                action: 'starttest',
                 disabled:true,
                 text: 'Начать тестирование'
             }
