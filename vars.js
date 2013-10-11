@@ -1,18 +1,53 @@
 // константы
-var gridHeight = 600;
-var dataSystem = [
-    [1, "Тестирование"],
-    [2, "Администрирование"],
-    [3, "Ведение"]
-]
+var gridHeight = 600,
+    dataSystem = [
+        [1, "Тестирование"],
+        [2, "Администрирование"],
+        [3, "Ведение"]
+    ],
+    regString = 'зарегистрирован',
+    unregString = 'подана заявка',
+    userid,
+    nullDate = '00.00.0000 00:00',
+    required = '<span style="color:red;font-weight:bold" data-qtip="Required">*</span>',
+    buttonSaveDelete = [
+        {
+            text: 'Добавить',
+            action: 'add',
+            iconCls: 'icon_add'
+        },
+        '-',
+        {
+            text: 'Удалить',
+            action: 'delete',
+            iconCls: 'icon_delete'
+        }
+    ],
+    buttonDateFromTo = [
+        {
+            xtype: 'datefield',
+            itemId: 'dateFindFrom',
+            emptyText: 'Дата c',
+            width: 100,
+            format: 'd.m.Y'
+        },
+        '-',
+        {
+            xtype: 'datefield',
+            itemId: 'dateFindTo',
+            emptyText: 'Дата по',
+            width: 100,
+            format: 'd.m.Y'
+        }
+    ],
+    rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
+        clicksToMoveEditor: 1,
+        autoCancel: false
+    }),
+    regStatusIntervalSec = 5,
+    regStatusDurationSec = 20;
 
-var regString = 'зарегистрирован',
-    unregString = 'не зарегистрирован';
 
-var userid;
-var nullDate = '00.00.0000 00:00';
-
-// чтобы нормально значения в комбо отображались
 comboRenderer = function (combo) {
     return function (value) {
         var record = combo.findRecord(combo.valueField || combo.displayField, value);
@@ -52,49 +87,12 @@ renderResult = function (value, metaData) {
     } else if (value == 0) {
         metaData.style += 'color:red; font-weight: bold;';
         return 'не сдал';
-    }else {
+    } else {
         metaData.style += 'color:blue; font-weight: bold;';
         return 'не сдавал';
     }
 
 };
-
-function CopyAutoLoadStore(store1) {
-    var records = [],
-        storeClass = Ext.getClass(store1);
-
-    store1.each(function (r) {
-        records.push(r.copy());
-    });
-
-    var store2 = Ext.create(storeClass.getName(), {
-        model: store1.model.prototype.modelName
-    });
-
-    return store2;
-};
-
-function CopyStore(store1) {
-    var records = [],
-        storeClass = Ext.getClass(store1);
-
-    store1.each(function (r) {
-        records.push(r.copy());
-    });
-
-    var store2 = Ext.create(storeClass.getName(), {
-        model: store1.model.prototype.modelName
-    });
-
-    store2.add(records);
-    //console.log(store1.model.prototype.modelName, store1, store2);
-    return store2;
-};
-
-var rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
-    clicksToMoveEditor: 1,
-    autoCancel: false
-});
 
 // * удаление старых гридов при нажатии на кнопку меню
 cascadeRemoveGrid = function (item) {
@@ -110,37 +108,47 @@ cascadeRemoveGrid = function (item) {
     }
 };
 
-var buttonSaveDelete = [
-    {
-        text: 'Добавить',
-        action: 'add',
-        iconCls: 'icon_add'
+// * запрос на регистрацию из системы Тестирование
+taskRegStatus = {
+    run:function(){
+        var comboExam = Ext.ComponentQuery.query('#comboExam')[0],
+            examid = comboExam.getValue();
+        Ext.Ajax.request({
+            url: 'php/user/getRegStatus.php?examid=' + examid,
+            success: function (response, options) {
+                var resp = Ext.decode(response.responseText),
+                    cnt = resp.cnt;
+                if(cnt == 1){
+                    var textStatus = Ext.ComponentQuery.query('#textStatus')[0],
+                        buttonStartTest = Ext.ComponentQuery.query('#startTest')[0];
+                    textStatus.setValue(regString);
+                    Ext.TaskManager.stop(taskRegStatus);
+                    comboExam.setReadOnly(true);
+                    buttonStartTest.enable();
+                }
+            },
+            failure: function () {
+                Ext.MessageBox.show({
+                    title:'Ошибка',
+                    msg:'Не удалось проверить статус заявки на регистрацию',
+                    buttons: Ext.MessageBox.OK,
+                    icon:Ext.MessageBox.ERROR
+                });
+            }
+        });
     },
-    '-',
-    {
-        text: 'Удалить',
-        action: 'delete',
-        iconCls: 'icon_delete'
-    }
-];
+    interval: 1000 * regStatusIntervalSec, // в секундах
+    duration: 1000 * regStatusDurationSec
+};
 
-var buttonDateFromTo = [
-    {
-        xtype: 'datefield',
-        itemId: 'dateFindFrom',
-        emptyText: 'Дата c',
-        width: 100,
-        format: 'd.m.Y'
+// * опрос подавших заявку на тест в классе
+taskClassCheck = {
+    run:function(){
+        var gridPerson = Ext.ComponentQuery.query('#gridPerson')[0];
+        gridPerson.store.load();
     },
-    '-',
-    {
-        xtype: 'datefield',
-        itemId: 'dateFindTo',
-        emptyText: 'Дата по',
-        width: 100,
-        format: 'd.m.Y'
-    }
-];
-
+    interval: 1000 * regStatusIntervalSec, // в секундах
+    duration: 1000 * regStatusDurationSec
+};
 
 

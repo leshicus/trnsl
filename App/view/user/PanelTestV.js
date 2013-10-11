@@ -78,6 +78,7 @@ Ext.define('App.view.user.PanelTestV', {
             {
                 xtype:'button',
                 action: 'starttest',
+                itemId:'startTest',
                 disabled:true,
                 text: 'Начать тестирование'
             }

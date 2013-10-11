@@ -8,6 +8,7 @@ Ext.define('App.view.TabAuthV', {
         type: 'vbox',
         align: 'stretch'
     },
+
     initComponent: function () {
         console.log('TabAuthV init');
 
@@ -15,7 +16,8 @@ Ext.define('App.view.TabAuthV', {
                 xtype: 'textfield',
                 itemId: 'textLogin',
                 name: 'textLogin',
-                //allowBlank: false,
+                allowBlank: false,
+                afterLabelTextTpl: required,
                 fieldLabel: 'Логин'
             },
         /*textFamily = {
@@ -61,6 +63,7 @@ Ext.define('App.view.TabAuthV', {
                 valueField: 'id',
                 displayField: 'name',
                 allowBlank: false,
+                afterLabelTextTpl: required,
                 fieldLabel: 'Подсистема'
             },
             textPassword = {
@@ -69,7 +72,8 @@ Ext.define('App.view.TabAuthV', {
                 name: 'textPassword',
                 inputType: 'password',
                 fieldLabel: 'Пароль',
-                allowBlank: false
+                allowBlank: false,
+                afterLabelTextTpl: required
                 //style: 'margin-top:15px'
             },
         // TODO сделать валидацию на поля, в т.ч. на пароли

@@ -16,6 +16,7 @@ Ext.define('App.view.TabRegV', {
                 itemId: 'textLogin',
                 name: 'textLogin',
                 allowBlank: false,
+                afterLabelTextTpl: required,
                 fieldLabel: 'Логин'
             },
             textFamily = {
@@ -23,6 +24,7 @@ Ext.define('App.view.TabRegV', {
                 itemId: 'textFamily',
                 name: 'textFamily',
                 allowBlank: false,
+                afterLabelTextTpl: required,
                 fieldLabel: 'Фамилия'
             },
             textName = {
@@ -30,6 +32,7 @@ Ext.define('App.view.TabRegV', {
                 itemId: 'textName',
                 name: 'textName',
                 allowBlank: false,
+                afterLabelTextTpl: required,
                 fieldLabel: 'Имя'
             },
             textLastname = {
@@ -48,6 +51,7 @@ Ext.define('App.view.TabRegV', {
                 valueField: 'specid',
                 displayField: 'specname',
                 allowBlank: false,
+                afterLabelTextTpl: required,
                 fieldLabel: 'Специальность'
             },
         // TODO сделать валидацию на поля, в т.ч. на пароль
@@ -57,7 +61,8 @@ Ext.define('App.view.TabRegV', {
                 name: 'textPassword',
                 inputType: 'password',
                 fieldLabel: 'Пароль',
-                allowBlank: false
+                allowBlank: false,
+                afterLabelTextTpl: required
                 //style: 'margin-top:15px'
             };
             /*fieldsetUser = Ext.create('Ext.form.FieldSet', {

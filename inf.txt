@@ -1,0 +1,2 @@
+Уникальный ключ для merge в class:
+CREATE UNIQUE INDEX class_unique_key ON class (`examid`, `userid`);

@@ -57,6 +57,9 @@
                         if (rec.get('examid') == examid)
                             return true;
                     });
+
+                    // * старт опроса подавших заявки сотрудников в классе
+                    Ext.TaskManager.start(taskClassCheck);
                 }
             },
             'gridExam button[action=add]': {

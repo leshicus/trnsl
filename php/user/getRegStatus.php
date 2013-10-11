@@ -8,19 +8,23 @@ $success = true;
 $userid = $_SESSION['userid'];
 $examid = $_REQUEST['examid'];
 
-$query = "insert ignore into class
-            (examid, userid)
-            values
-            ('$examid','$userid')";
+$query = "select
+            count(*) as cnt
+          from class c
+          where c.examid = '$examid'
+          and   c.userid = '$userid'
+          and   c.reg = 1";
 try {
     $res = $mysqli->query($query);
+    $row = $res->fetch_row();
 } catch (Exception $e) {
     $success = false;
 }
 
 if ($success) {
     echo json_encode(
-        array('success' => $success));
+        array('success' => $success,
+            'cnt' => $row[0]));
 } else {
     echo json_encode(
         array('success' => $success,
