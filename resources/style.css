@@ -1,13 +1,8 @@
 /*ExtJs css*/
-
-.colorStatusTextReg{
-    color:green;
-    font-weight:bold;
-}
-
-.colorStatusTextUnreg{
-    color:'#FF0000',
-    'font-weight':'bold'
+/* закругления заголовков таб */
+.x-tab-default-top {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* фон */

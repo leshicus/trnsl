@@ -23,7 +23,7 @@ Ext.define('App.view.user.PanelTestV', {
                 },
                 border:false,
                 frame:false,
-                width: 500,
+                width: 400,
                 items: [
                     {
                         xtype:'panel',
@@ -92,19 +92,19 @@ Ext.define('App.view.user.PanelTestV', {
                         },
                         items:[
                             {
-                                xtype:'textfield',
+                                xtype:'displayfield',
                                 fieldLabel:'Времени осталось',
                                 itemId:'textTime',
                                 readOnly:true
                             },
                             {
-                                xtype:'textfield',
+                                xtype:'displayfield',
                                 fieldLabel:'Вопрос',
                                 itemId:'textQuestionNumber',
                                 readOnly:true
                             },
                             {
-                                xtype:'textfield',
+                                xtype:'displayfield',
                                 fieldLabel:'Ответ',
                                 itemId:'textAnswer',
                                 readOnly:true
@@ -115,7 +115,7 @@ Ext.define('App.view.user.PanelTestV', {
             },
             {
                 xtype:'panel',
-                title:'Билеты',
+                title:'Билет',
                 flex:1,
                 frame:true,
                 margin: '0 0 0 5',
@@ -126,6 +126,27 @@ Ext.define('App.view.user.PanelTestV', {
                         action: 'nextquestion',
                         itemId:'nextQuestion',
                         text: 'Следующий вопрос'
+                    }
+                ],
+                layout: {
+                    type: 'accordion',
+                    titleCollapse: false,
+                    fill:false,
+                    multi:true
+                },
+                items:[
+                    {
+                        title: 'Вопрос №1',
+                        itemId:'question',
+                        flex:1,
+                        hideCollapseTool:true,
+                        html: 'Текст'
+                    },{
+                        title: 'Варианты ответа',
+                        flex:1,
+                        itemId:'answer',
+                        hideCollapseTool:true,
+                        html: 'Текст'
                     }
                 ]
             }
