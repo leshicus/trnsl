@@ -2,7 +2,7 @@ Ext.define('App.view.admin.PanelClassV', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.panelClass',
     itemId: 'panelClass',
-    border: 0,
+    border: false,
     flex: 1,
     padding: '0 0 0 0',
     layout: {

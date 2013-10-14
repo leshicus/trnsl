@@ -77,7 +77,7 @@ Ext.define('App.view.admin.GridPersonV', {
                     itemId:'menuReg'
                 },
                 {
-                    text:'Убрать регистрацию',
+                    text:'Снять регистрацию',
                     itemId:'menuUnreg'
                 }
             ]

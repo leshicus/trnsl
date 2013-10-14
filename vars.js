@@ -44,8 +44,18 @@ var gridHeight = 600,
         clicksToMoveEditor: 1,
         autoCancel: false
     }),
-    regStatusIntervalSec = 5,
-    regStatusDurationSec = 20;
+    regStatusIntervalSec = 5,  // * интервал опроса по регистрации
+    regStatusDurationSec = 20, // * продолжительность опроса класса на регистрации
+    examTimerMin = 2, // * минут на экзамен
+    examTimerSec = 60, // * секунд в минуте
+    colorStatusTextUnreg = {
+        color: '#FF0000',
+        'font-weight': 'bold'
+    },
+    colorStatusTextReg = {
+        color: '#008000',
+        'font-weight': 'bold'
+    };
 
 
 comboRenderer = function (combo) {
@@ -109,8 +119,8 @@ cascadeRemoveGrid = function (item) {
 };
 
 // * запрос на регистрацию из системы Тестирование
-taskRegStatus = {
-    run:function(){
+var taskRegStatus = {
+    run: function () {
         var comboExam = Ext.ComponentQuery.query('#comboExam')[0],
             examid = comboExam.getValue();
         Ext.Ajax.request({
@@ -118,10 +128,11 @@ taskRegStatus = {
             success: function (response, options) {
                 var resp = Ext.decode(response.responseText),
                     cnt = resp.cnt;
-                if(cnt == 1){
+                if (cnt == 1) {
                     var textStatus = Ext.ComponentQuery.query('#textStatus')[0],
                         buttonStartTest = Ext.ComponentQuery.query('#startTest')[0];
                     textStatus.setValue(regString);
+                    textStatus.setFieldStyle(colorStatusTextReg);
                     Ext.TaskManager.stop(taskRegStatus);
                     comboExam.setReadOnly(true);
                     buttonStartTest.enable();
@@ -129,10 +140,10 @@ taskRegStatus = {
             },
             failure: function () {
                 Ext.MessageBox.show({
-                    title:'Ошибка',
-                    msg:'Не удалось проверить статус заявки на регистрацию',
+                    title: 'Ошибка',
+                    msg: 'Не удалось проверить статус заявки на регистрацию',
                     buttons: Ext.MessageBox.OK,
-                    icon:Ext.MessageBox.ERROR
+                    icon: Ext.MessageBox.ERROR
                 });
             }
         });
@@ -142,8 +153,8 @@ taskRegStatus = {
 };
 
 // * опрос подавших заявку на тест в классе
-taskClassCheck = {
-    run:function(){
+var taskClassCheck = {
+    run: function () {
         var gridPerson = Ext.ComponentQuery.query('#gridPerson')[0];
         gridPerson.store.load();
     },

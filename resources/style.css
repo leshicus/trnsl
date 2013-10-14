@@ -1,4 +1,34 @@
 /*ExtJs css*/
+
+.colorStatusTextReg{
+    color:green;
+    font-weight:bold;
+}
+
+.colorStatusTextUnreg{
+    color:'#FF0000',
+    'font-weight':'bold'
+}
+
+/* фон */
+.ContentPanel > .x-panel-body {
+    background-image: url(resources/image/square.gif);
+}
+
+/* фон выделенного поля (по умолчанию- белый) */
+.x-form-focus,textarea.x-form-focus {
+    background: #C1DDF1;
+}
+/* фон инвалидного поля (по умолчанию- белый)*/
+.x-form-type-text textarea.x-form-invalid-field, .x-form-type-text input.x-form-invalid-field, .x-form-type-password textarea.x-form-invalid-field, .x-form-type-password input.x-form-invalid-field, .x-form-type-number textarea.x-form-invalid-field, .x-form-type-number input.x-form-invalid-field, .x-form-type-email textarea.x-form-invalid-field, .x-form-type-email input.x-form-invalid-field, .x-form-type-search textarea.x-form-invalid-field, .x-form-type-search input.x-form-invalid-field, .x-form-type-tel textarea.x-form-invalid-field, .x-form-type-tel input.x-form-invalid-field {
+    background-color: #FFECE8;
+}
+
+/* толщина рамочки frame */
+.x-panel-default-framed {
+    border-width: 3px;
+}
+
 /* перенос строки в гриде*/
 .wrapText .x-grid-cell-inner {
     white-space: normal;
@@ -96,7 +126,8 @@
 }
 /*Цвет группировок*/
 .x-grid-group-hd{
-    background: #DAF8CC;
+    background: #F0F0F0;
+    border-width: 1 0 1 0;
 }
 
 /*           Мои стили        */
