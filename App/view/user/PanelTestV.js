@@ -116,10 +116,13 @@ Ext.define('App.view.user.PanelTestV', {
             {
                 xtype:'panel',
                 title:'Билет',
+                itemId:'panelCard',
                 flex:1,
                 frame:true,
                 margin: '0 0 0 5',
                 border:false,
+                hidden:true,
+                questionNumber:0, // * текущий вопрос билета
                 buttons : [
                     {
                         xtype:'button',
@@ -137,16 +140,26 @@ Ext.define('App.view.user.PanelTestV', {
                 items:[
                     {
                         title: 'Вопрос №1',
-                        itemId:'question',
+                        itemId:'questionAccordion',
                         flex:1,
                         hideCollapseTool:true,
-                        html: 'Текст'
+                        items:[
+                            {
+                                xtype:'displayfield',
+                                itemId:'question'
+                            }
+                        ]
                     },{
                         title: 'Варианты ответа',
                         flex:1,
-                        itemId:'answer',
-                        hideCollapseTool:true,
-                        html: 'Текст'
+                        itemId:'answerAccordion',
+                        hideCollapseTool:true/*,
+                        items:[
+                            {
+                                xtype:'displayfield',
+                                itemId:'answer'
+                            }
+                        ]*/
                     }
                 ]
             }

@@ -55,7 +55,8 @@ var gridHeight = 600,
     colorStatusTextReg = {
         color: '#008000',
         'font-weight': 'bold'
-    };
+    },
+    questionAmount = 3; // * число вопросов в билете
 
 
 comboRenderer = function (combo) {
