@@ -6,6 +6,7 @@ include('php/include.php');
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Тестирование</title>
+
     <?echo $extjs421_neptune;?>
     <style>
         <?include('resources/ico.css');?>
@@ -15,6 +16,7 @@ include('php/include.php');
         <?include('vars.js');?>
         <?include('app.js');?>
     </script>
+
 </head>
 <body>
 </body>

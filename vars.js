@@ -7,6 +7,10 @@ var gridHeight = 600,
     ],
     regString = 'зарегистрирован',
     unregString = 'подана заявка',
+    correctString = 'верный',
+    uncorrectString = 'не верный',
+    passString = 'экзамен сдан',
+    unpassString = 'экзамен не сдан',
     userid,
     nullDate = '00.00.0000 00:00',
     required = '<span style="color:red;font-weight:bold" data-qtip="Required">*</span>',
@@ -50,13 +54,20 @@ var gridHeight = 600,
     examTimerSec = 60, // * секунд в минуте
     colorStatusTextUnreg = {
         color: '#FF0000',
-        'font-weight': 'bold'
+        'font-weight': 'bold',
+        'font-size': 'larger',
+        'font-family': 'monospace'
     },
     colorStatusTextReg = {
         color: '#008000',
-        'font-weight': 'bold'
+        'font-weight': 'bold',
+        'font-size': 'larger',
+        'font-family': 'monospace'
     },
-    questionAmount = 3; // * число вопросов в билете
+    rightAnswersAmount = 0, // * количество данных правильных ответов
+    questionNumber = 0, // * текущий номер вопроса
+    questionAmount = 3, // * число вопросов в билете
+    passAmount = 2; // * число правильных ответов для успешного прохождения экзамена
 
 
 comboRenderer = function (combo) {
@@ -94,10 +105,10 @@ renderGridGroup = function (combo) {
 renderResult = function (value, metaData) {
     if (value == 1) {
         metaData.style += 'color:green; font-weight: bold;';
-        return 'сдал';
+        return passString;
     } else if (value == 0) {
         metaData.style += 'color:red; font-weight: bold;';
-        return 'не сдал';
+        return unpassString;
     } else {
         metaData.style += 'color:blue; font-weight: bold;';
         return 'не сдавал';
@@ -118,6 +129,24 @@ cascadeRemoveGrid = function (item) {
         }
     }
 };
+
+// * всплывающее сообщение с ошибкой
+errorMessage = function (title, msg) {
+    Ext.MessageBox.show({
+        title: title,
+        msg: msg,
+        buttons: Ext.MessageBox.OK,
+        icon: Ext.MessageBox.ERROR
+    });
+}
+infoMessage = function (title, msg) {
+    Ext.MessageBox.show({
+        title: title,
+        msg: msg,
+        buttons: Ext.MessageBox.OK,
+        icon: Ext.MessageBox.INFO
+    });
+}
 
 // * запрос на регистрацию из системы Тестирование
 var taskRegStatus = {

@@ -46,12 +46,7 @@
                             Ext.TaskManager.start(taskRegStatus);
                         },
                         failure: function () {
-                            Ext.MessageBox.show({
-                                title: 'Ошибка',
-                                msg: 'Не удалось подать заявку на регистрацию',
-                                buttons: Ext.MessageBox.OK,
-                                icon: Ext.MessageBox.ERROR
-                            });
+                            errorMessage('Ошибка подключения к базе','Не удалось подать заявку на регистрацию');
                         }
                     });
                 },
@@ -79,12 +74,7 @@
                             var respGetExam = Ext.decode(response.responseText),
                                 cnt = respGetExam.cnt;
                             if (cnt != 0) {
-                                Ext.MessageBox.show({
-                                    title: 'Ошибка',
-                                    msg: 'Нельзя повторно проходить один и тот же экзамен',
-                                    buttons: Ext.MessageBox.OK,
-                                    icon: Ext.MessageBox.ERROR
-                                });
+                                infoMessage('Внимание','Нельзя повторно проходить один и тот же экзамен');
                             } else {
                                 // * проверим не снята ли регистрация
                                 Ext.Ajax.request({
@@ -93,6 +83,7 @@
                                         var resp = Ext.decode(response.responseText);
                                         cnt = resp.cnt
                                         if (cnt != 0) { // * старт теста
+                                            button.setDisabled(true);
                                             // * генерация билета
                                             var storeCard = Ext.data.StoreManager.lookup('user.CardS');
                                             // * показ вопросов на событие load в storeCard
@@ -105,34 +96,19 @@
                                             textStatus.setFieldStyle(colorStatusTextUnreg);
                                             comboExam.setReadOnly(false);
                                             buttonStartTest.disable();
-                                            Ext.MessageBox.show({
-                                                title: 'Ошибка',
-                                                msg: 'Регистрация была снята администратором',
-                                                buttons: Ext.MessageBox.OK,
-                                                icon: Ext.MessageBox.ERROR
-                                            });
+                                            infoMessage('Внимание','Регистрация была снята администратором');
                                             Ext.TaskManager.start(taskRegStatus);
                                         }
                                     },
                                     failure: function () {
-                                        Ext.MessageBox.show({
-                                            title: 'Ошибка',
-                                            msg: 'Ошибка проверки статуса регистрации',
-                                            buttons: Ext.MessageBox.OK,
-                                            icon: Ext.MessageBox.ERROR
-                                        });
+                                        errorMessage('Ошибка подключения к базе','Ошибка проверки статуса регистрации');
                                     },
                                     scope: this
                                 });
                             }
                         },
                         failure: function (response) {
-                            Ext.MessageBox.show({
-                                title: 'Ошибка',
-                                msg: 'Ошибка проверки повторного прохождения экзамена',
-                                buttons: Ext.MessageBox.OK,
-                                icon: Ext.MessageBox.ERROR
-                            });
+                            errorMessage('Ошибка подключения к базе', 'Ошибка проверки повторного прохождения экзамена');
                         },
                         scope: this
                     });
@@ -143,28 +119,56 @@
                 click: function (button) {
                     console.log('action=nextquestion');
 
+
                     var panelTest = button.up('panelTest'),
-                        panelCard = panelTest.down('#panelCard');
-                    if (panelCard.questionNumber < questionAmount) {
-                        //* следующий вопрос
-                        var question = panelCard.down('#question'),
-                            storeCard = Ext.data.StoreManager.lookup('user.CardS'),
-                            questionNumber = panelCard.questionNumber + 1,
-                            questionRec = storeCard.findRecord('rownum', questionNumber);
-                        if (questionRec) {
-                            var questionText = questionRec.get('questiontext');
-                            question.setValue(questionText);
-                            panelCard.questionNumber = questionNumber;
-                        }
-
-                    } else {
-                        //* сохраняем результат
-
+                        panelCard = panelTest.down('#panelCard'),
+                        rownum = questionNumber,
+                        textAnswer = panelTest.down('#textAnswer'), // * прогресс - Ответ
+                        answerAccordion = panelTest.down('#answerAccordion'),
+                        arrayAnswers = answerAccordion.query('radiofield'),
+                        storeCard = Ext.data.StoreManager.lookup('user.CardS'),
+                        questionId = storeCard.findRecord('rownum',rownum).get('questionid'),
+                        buttonNextQuestion = panelTest.down('#nextQuestion'),
+                        checkedAnswerId,
+                        correct = 0,
+                        taskDelayShowNewQuestion = Ext.create('Ext.util.DelayedTask', function () {
+                            this.showNextQuestion(panelCard, buttonNextQuestion);
+                        }, this);
+                    buttonNextQuestion.setDisabled(true);
+                    // * проверим правильность ответа
+                    function getCheckedAnswer(element, index, array) {
+                        if (element.checked)
+                            checkedAnswerId = element.inputValue;
                     }
-
+                    arrayAnswers.forEach(getCheckedAnswer);
+                    if(checkedAnswerId){
+                        function findRecordAnswer(rec, id) {
+                            if(rec.get('rownum') == rownum &&
+                                rec.get('answerid') == checkedAnswerId){
+                                return true;
+                            }
+                        }
+                        var checkedAnswerIndex = storeCard.findBy(findRecordAnswer);
+                        if(checkedAnswerIndex != -1){
+                            var checkedAnswerRec = storeCard.getAt(checkedAnswerIndex);
+                            correct = checkedAnswerRec.get('correct');
+                        }
+                    }
+                    // * сохраним результат
+                    this.saveResult(questionId, correct);
+                    // * прогресс - ответ
+                    if (correct == 1){
+                        rightAnswersAmount++;
+                        textAnswer.setValue(correctString);
+                        textAnswer.setFieldStyle(colorStatusTextReg);
+                    }else{
+                        textAnswer.setValue(uncorrectString);
+                        textAnswer.setFieldStyle(colorStatusTextUnreg);
+                    }
+                    // * отсроченный показ следующего билета
+                    taskDelayShowNewQuestion.delay(2000);
                 }
             }
-
         });
         console.log('PanelTestC end');
     },
@@ -191,7 +195,6 @@
                         textTime.setValue(examTimerSec + ' секунд');
                         runnerExamTest.start(taskExamTimerSec);
                         runnerExamTest.stop(taskExamTimerMin);
-
                     } else {
                         textTime.setValue(examTimerMin + ' минут');
                         examTimerMin -= 1;
@@ -203,31 +206,17 @@
         textTime.setValue(examTimerMin + ' минут');
         runnerExamTest.start(taskExamTimerMin);
     },
-    // * показ вопросов
+    // * показ 1-го вопроса после загрузки стора билетов
     onStoreCardLoad: function (storeCard) {
         console.log('onStoreCardLoad');
 
-        var panelTest = this.getPanelTest(),
-            panelCard = panelTest.down('#panelCard'),
-            question = panelCard.down('#question'),
-            questionText = storeCard.findRecord('rownum', 1).get('questiontext'),
-            answerText = panelCard.down('#answer'),
-            maxRownum = this.getStoreMaxValue(storeCard, 'rownum');
-
         // * проверим, что в билете необходимое число вопросов
+        var maxRownum = this.getStoreMaxValue(storeCard, 'rownum'); //* число вопросов в билете
         if (maxRownum != questionAmount){
-            Ext.MessageBox.show({
-                title: 'Ошибка генерации билета',
-                msg: 'Не верное число вопросов в билете. Нужно: ' + questionAmount + ', сгенерировано: ' + maxRownum,
-                buttons: Ext.MessageBox.OK,
-                icon: Ext.MessageBox.ERROR
-            });
+            errorMessage('Ошибка генерации билета', 'Не верное число вопросов в билете. Нужно: ' + questionAmount + ', сгенерировано: ' + maxRownum);
         }else{
-            question.setValue(questionText);
-            panelCard.questionNumber = 1;
-            panelCard.show();
+            this.showCard(1);
         }
-
     },
     // * нахождение максимального значения поля в сторе
     getStoreMaxValue: function (store, field) {
@@ -240,5 +229,98 @@
             });
         }
         return max;
+    },
+    // * смена вопросов и ответов
+    showCard: function (num) {
+        var storeCard = Ext.data.StoreManager.lookup('user.CardS');
+        storeCard.clearFilter();
+        var panelTest = this.getPanelTest(),
+            panelCard = panelTest.down('#panelCard'),// * билет
+            questionAccordion = panelCard.down('#questionAccordion'),
+            answerAccordion = panelCard.down('#answerAccordion'),
+            question = panelCard.down('#question'), // * поле внутри аккордиона Вопрос
+            textQuestion = panelTest.down('#textQuestion'), // * Прогресс - Вопрос
+            textAnswer = panelTest.down('#textAnswer'),
+            questionText = storeCard.findRecord('rownum', num).get('questiontext'); //* текст вопроса
+        // * вопросы
+        question.setValue(questionText);
+        questionAccordion.setTitle('Вопрос №' + num);
+        textAnswer.reset();
+        textQuestion.setValue(num + ' / ' + questionAmount);
+        questionNumber = num;
+        // * ответы
+        answerAccordion.removeAll(true);
+        storeCard.filter(function (rec) {
+            if (rec.get('rownum') == num)
+                return true;
+        });
+        storeCard.each(function (r) {
+            var answerId = r.get('answerid'),
+                answerText = r.get('answertext');
+            answerAccordion.add(
+                {
+                    boxLabel  : answerText,
+                    inputValue: answerId
+                }
+            );
+        });
+        panelCard.show();
+    },
+    showNextQuestion : function (panelCard, buttonNextQuestion) {
+        if (questionNumber < questionAmount) {
+            //* следующий вопрос
+            buttonNextQuestion.setDisabled(false);
+            this.showCard(questionNumber + 1);
+        } else {
+            //* отображаем результат в прогрессе
+            var panelTest = Ext.ComponentQuery.query('panelTest')[0],
+                textResult = panelTest.down('#textResult');
+            if(rightAnswersAmount >= passAmount){ // * экзамен сдан
+                textResult.setValue(passString);
+                textResult.setFieldStyle(colorStatusTextReg);
+                this.saveToClass(1);
+            }else{
+                textResult.setValue(unpassString);
+                textResult.setFieldStyle(colorStatusTextUnreg);
+                this.saveToClass(0);
+            }
+        }
+    },
+    // * сохранить в базу ответ пользователя
+    saveResult : function (questionId, correct) {
+        var panelTest = Ext.ComponentQuery.query('panelTest')[0],
+            comboExam = panelTest.down('#comboExam'),
+            examid = comboExam.getValue();
+        Ext.Ajax.request({
+            url: 'php/user/saveCard.php?examid=' + examid
+                + '&questionid=' + questionId
+                + '&correct=' + correct,
+            success: function (response, options) {
+
+            },
+            failure: function () {
+                errorMessage('Ошибка подключения к базе','Ответ не сохранен в базу');
+            },
+            scope: this
+        });
+    },
+    // * сохранение результата в таблицу class
+    saveToClass : function (result) {
+        var panelTest = Ext.ComponentQuery.query('panelTest')[0],
+            comboExam = panelTest.down('#comboExam'),
+            examid = comboExam.getValue();
+        Ext.Ajax.request({
+            url: 'php/user/saveClass.php?examid=' + examid
+                + '&balls=' + rightAnswersAmount
+                + '&result=' + result,
+            success: function (response, options) {
+
+            },
+            failure: function () {
+                errorMessage('Ошибка подключения к базе','Результат экзамена не сохранен в базу');
+            },
+            scope: this
+        });
     }
+
 });

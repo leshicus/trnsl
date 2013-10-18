@@ -16,6 +16,7 @@ Ext.define('App.view.user.PanelTestV', {
         var storeExam = Ext.create('App.store.admin.GridExamS');
         //storeExam.load();
         this.items = [
+// * левая половина: регистрация и прогресс
             {
                 layout: {
                     type: 'vbox',
@@ -23,8 +24,9 @@ Ext.define('App.view.user.PanelTestV', {
                 },
                 border:false,
                 frame:false,
-                width: 400,
+                width: 300,
                 items: [
+// * регистрация
                     {
                         xtype:'panel',
                         title:'Регистрация на экзамен',
@@ -63,7 +65,7 @@ Ext.define('App.view.user.PanelTestV', {
                                 fieldLabel:'Выберите экзамен'
                             },
                             {
-                                xtype:'textfield',
+                                xtype:'displayfield',
                                 fieldLabel:'Статус',
                                 itemId:'textStatus',
                                 //labelWidth:70,
@@ -81,10 +83,12 @@ Ext.define('App.view.user.PanelTestV', {
                             }
                         ]
                     },
+// * прогресс
                     {
                         xtype:'panel',
                         frame:true,
                         flex:2,
+                        itemId:'panelProgress',
                         title:'Прогресс',
                         defaults:{
                             margin:'5 5 5 5',
@@ -95,24 +99,48 @@ Ext.define('App.view.user.PanelTestV', {
                                 xtype:'displayfield',
                                 fieldLabel:'Времени осталось',
                                 itemId:'textTime',
-                                readOnly:true
+                                readOnly:true,
+                                fieldStyle:{
+                                    color: '#0000FF',
+                                    'font-weight': 'bold',
+                                    'font-size': 'larger',
+                                    'font-family': 'monospace'
+                                }
                             },
                             {
                                 xtype:'displayfield',
                                 fieldLabel:'Вопрос',
-                                itemId:'textQuestionNumber',
-                                readOnly:true
+                                itemId:'textQuestion',
+                                fieldStyle:{
+                                    color: '#0000FF',
+                                    'font-weight': 'bold',
+                                    'font-size': 'larger',
+                                    'font-family': 'monospace'
+                                }
                             },
                             {
                                 xtype:'displayfield',
                                 fieldLabel:'Ответ',
-                                itemId:'textAnswer',
-                                readOnly:true
+                                itemId:'textAnswer'
+                            },
+                            {
+                                xtype:'box',
+                                style: {
+                                    color: '#FFFFFF',
+                                    backgroundColor:'#000000'
+                                },
+                                height: 1
+                            },
+                            {
+                                xtype:'displayfield',
+                                fieldLabel:'Результат',
+                                itemId:'textResult'
                             }
                         ]
                     }
                 ]
             },
+// * билет
             {
                 xtype:'panel',
                 title:'Билет',
@@ -122,6 +150,7 @@ Ext.define('App.view.user.PanelTestV', {
                 margin: '0 0 0 5',
                 border:false,
                 hidden:true,
+                buttonAlign:'left',
                 questionNumber:0, // * текущий вопрос билета
                 buttons : [
                     {
@@ -139,25 +168,34 @@ Ext.define('App.view.user.PanelTestV', {
                 },
                 items:[
                     {
-                        title: 'Вопрос №1',
+                        //title: 'Вопрос №1',
                         itemId:'questionAccordion',
                         flex:1,
                         hideCollapseTool:true,
                         items:[
                             {
                                 xtype:'displayfield',
-                                itemId:'question'
+                                itemId:'question',
+                                padding:'20 20 20 20'
                             }
                         ]
                     },{
                         title: 'Варианты ответа',
                         flex:1,
                         itemId:'answerAccordion',
-                        hideCollapseTool:true/*,
+                        hideCollapseTool:true,
+                        defaultType: 'radiofield',
+                        defaults: {
+                            flex: 1,
+                            name:'answertext',
+                            padding:'20 20 20 20'
+                        }/*,
                         items:[
                             {
-                                xtype:'displayfield',
-                                itemId:'answer'
+                                xtype:'radiofield',
+                                itemId:'radiofieldAnswer',
+                                layout: 'vbox',
+
                             }
                         ]*/
                     }

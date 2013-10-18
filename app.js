@@ -47,8 +47,8 @@ Ext.define('Ext.ux.grid.RowEditor', {
     }
 });
 
-Ext.grid.RowEditor.prototype.saveBtnText = 'Сохранить';
-Ext.grid.RowEditor.prototype.cancelBtnText = 'Отменить';
+Ext.grid.RowEditor.prototype.saveBtnText = 'ОК';
+Ext.grid.RowEditor.prototype.cancelBtnText = 'Отмена';
 Ext.tip.QuickTipManager.init(true, {showDelay : 2000, dismissDelay:2000});
 Ext.application({
     name: 'App',
