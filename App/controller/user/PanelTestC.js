@@ -147,6 +147,8 @@
                         name:'userAnswers'
                     });
 
+
+
                     buttonNextQuestion.setDisabled(true);
                     // * проверим правильность ответа
                     function getCheckedAnswer(element, index, array) {
