@@ -5,7 +5,7 @@ Ext.define('App.view.admin.GridPersonV', {
     frame: true,
     //flex:1,
     margin: '0 0 0 5',
-    forceFit: true,
+    //forceFit: true,
     //store: Ext.create('App.store.admin.GridPersonS'),
     store: 'admin.GridPersonS',
     title: 'Сотрудники',
@@ -28,6 +28,14 @@ Ext.define('App.view.admin.GridPersonV', {
             }
         ];
 
+        this.tools = [
+            {
+                type: 'refresh',
+                itemId: 'refreshGridPerson',
+                tooltip: 'Обновить'
+            }
+        ];
+
         this.columns = [
             {
                 text: '№',
@@ -37,26 +45,33 @@ Ext.define('App.view.admin.GridPersonV', {
             {
                 text: 'ФИО',
                 itemId: 'columnFio',
-                dataIndex: 'fio'
+                dataIndex: 'fio',
+                flex:1
+            },
+            {
+                text: 'Время',
+                itemId: 'columnTime',
+                dataIndex: 'timelimit',
+                width: 60
             },
             {
                 text: 'Баллы',
                 itemId: 'columnBalls',
                 dataIndex: 'balls',
-                width: 30
+                width: 60
             },
             {
                 text: 'Результат',
                 itemId: 'columnResult',
                 dataIndex: 'result',
-                width: 30,
+                width: 130,
                 renderer:renderResult
             },
             {
                 text: 'Регистрация',
                 itemId: 'columnReg',
                 dataIndex: 'reg',
-                width: 40,
+                width: 150,
                 renderer:function (value, metaData) {
                     if (value == 1) {
                         metaData.style += 'color:green; font-weight: bold;';

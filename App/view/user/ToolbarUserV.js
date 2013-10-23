@@ -9,7 +9,14 @@ Ext.define('App.view.user.ToolbarUserV', {
     initComponent: function () {
         console.log('ToolbarUserV init');
 
+
+
         this.items = [
+            {
+                text: 'Главная',
+                itemId: 'mainMI'
+            },
+            '-',
             {
                 text: 'Тестирование',
                 itemId: 'testMI'
@@ -17,12 +24,9 @@ Ext.define('App.view.user.ToolbarUserV', {
             {
                 text: 'Самоподготовка',
                 itemId: 'selfMI'
-            },
-            '->',
-            {
-                text: 'Главная',
-                itemId: 'mainMI'
-            }
+            }/*,
+            { xtype: 'tbspacer', width: 100 },
+            label*/
         ];
         this.callParent(arguments);
         console.log('ToolbarUserV end');

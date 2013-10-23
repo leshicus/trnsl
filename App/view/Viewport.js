@@ -24,6 +24,14 @@
                     type: 'vbox'
                 },
                 items: [
+                    {
+                        xtype:'box',
+                        margin:'5 5 5 1',
+                        cls:'mystyle',
+                        html:'Аутентификация',
+                        height: 35,
+                        width:500
+                    },
                     {xtype: 'tabpanelAuth'}
                 ]
             },
@@ -37,6 +45,13 @@
                     align: 'stretch'
                 },
                 items: [
+                    {
+                        xtype:'box',
+                        margin:'5 5 0 1',
+                        cls:'mystyle',
+                        html:'Подсиситема тестирования',
+                        height: 35
+                    },
                     {xtype: 'toolbarUser'}
                 ]
             },
@@ -50,6 +65,13 @@
                     align: 'stretch'
                 },
                 items: [
+                    {
+                        xtype:'box',
+                        margin:'5 5 0 1',
+                        cls:'mystyle',
+                        html:'Подсиситема администрирования',
+                        height: 35
+                    },
                     {xtype: 'toolbarAdmin'}
                 ]
             },
@@ -63,6 +85,13 @@
                     align: 'stretch'
                 },
                 items: [
+                    {
+                        xtype:'box',
+                        margin:'5 5 0 1',
+                        cls:'mystyle',
+                        html:'Подсиситема ведения',
+                        height: 35
+                    },
                     {xtype: 'toolbarManage'}
                 ]
             }

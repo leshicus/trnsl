@@ -5,6 +5,22 @@
     border-top-right-radius: 5px;
 }
 
+/* стиль заголовков подсистем */
+.mystyle {
+    color: #666666;
+    background:#E6F1F9;
+    padding: 2 0 0 5;
+    font-size: x-large;
+    font-variant: small-caps;
+    font-family: serif;
+    border-radius: 4;
+}
+
+/* label */
+.x-form-item-label {
+    font-variant: small-caps;
+}
+
 /* фон */
 .ContentPanel > .x-panel-body {
     background-image: url(resources/image/square.gif);

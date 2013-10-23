@@ -190,8 +190,6 @@
             },
             'gridPerson button[action=delete]': {
                 click: function (button) {
-                    console.log('action=delete');
-
                     var grid = button.up('grid'),
                         selection = grid.getSelected();
 
@@ -235,6 +233,12 @@
                     Ext.each(selection, function (item) {
                         item.set('reg', 0);
                     });
+                }
+            },
+            '#refreshGridPerson': {
+                click: function (button) {
+                    var grid = this.getGridPerson();
+                    grid.store.load();
                 }
             }
         });

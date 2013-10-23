@@ -50,24 +50,25 @@ var gridHeight = 600,
     }),
     regStatusIntervalSec = 5,  // * интервал опроса по регистрации
     regStatusDurationSec = 20, // * продолжительность опроса класса на регистрации
-    examTimerMin = 2, // * минут на экзамен
-    examTimerSec = 60, // * секунд в минуте
+    examTimerMin = 1, // * минут на экзамен
+    examTimerSec = 3, // * секунд в минуте
     colorStatusTextUnreg = {
         color: '#FF0000',
         'font-weight': 'bold',
         'font-size': 'larger',
-        'font-family': 'monospace'
+        'font-variant': 'small-caps'
     },
     colorStatusTextReg = {
         color: '#008000',
         'font-weight': 'bold',
         'font-size': 'larger',
-        'font-family': 'monospace'
+        'font-variant': 'small-caps'
     },
     rightAnswersAmount = 0, // * количество данных правильных ответов
     questionNumber = 0, // * текущий номер вопроса
     questionAmount = 3, // * число вопросов в билете
-    passAmount = 2; // * число правильных ответов для успешного прохождения экзамена
+    passAmount = 2, // * число правильных ответов для успешного прохождения экзамена
+    runnerExamTest = new Ext.util.TaskRunner(); // * задание для времени тестов
 
 
 comboRenderer = function (combo) {
@@ -117,7 +118,7 @@ renderResult = function (value, metaData) {
 };
 
 // * удаление старых гридов при нажатии на кнопку меню
-cascadeRemoveGrid = function (item) {
+cascadeRemoveGrid = function (item, flag) {
     var viewport = item.up('viewport');
     if (viewport) {
         var layout = viewport.getLayout(),
@@ -125,7 +126,7 @@ cascadeRemoveGrid = function (item) {
         //console.log(item,item.superclass.xtype, item.xtype);
         if (item.superclass.xtype == 'gridpanel'
             || item.superclass.xtype == 'panel') {
-            activeCard.remove(item, false);
+                activeCard.remove(item, flag);
         }
     }
 };

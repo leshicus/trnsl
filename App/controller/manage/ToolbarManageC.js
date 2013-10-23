@@ -35,7 +35,7 @@
                         panel = Ext.create('App.view.manage.PanelQuestionV');
                     }
                     tree.getRootNode().expand(true);
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.activeItem.add(panel);
                 }
             },
@@ -54,7 +54,7 @@
                         panel = Ext.create('App.view.manage.PanelSpecV');
                     }
                     tree.getRootNode().expand(true);
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.activeItem.add(panel);
                 }
             },
@@ -69,7 +69,7 @@
                     if (!panel) {
                         panel = Ext.create('App.view.manage.GridActV');
                     }
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.activeItem.add(panel);
                 }
             },
@@ -84,7 +84,7 @@
                     if (!panel) {
                         panel = Ext.create('App.view.manage.GridGroupV');
                     }
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.activeItem.add(panel);
                 }
             },
@@ -94,7 +94,7 @@
 
                     var viewport = me.up('viewport'),
                         layout = viewport.getLayout();
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.setActiveItem(0);
                 }
             }

@@ -7,6 +7,7 @@ Ext.define('App.model.admin.GridPersonM', {
         {name: 'result'},
         {name: 'fio'},
         {name: 'login'},
-        {name: 'reg'}
+        {name: 'reg'},
+        {name: 'timelimit'}
     ]
 });

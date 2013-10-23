@@ -74,7 +74,7 @@ foreach ($list as $k => $row){
             values
             ('$userid', '$examid', '$questionid', 0)";
         try {
-            $res = $mysqli->query($sql);
+            //$res = $mysqli->query($sql);
         } catch (Exception $e) {
             $success = false;
         }

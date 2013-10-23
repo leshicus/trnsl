@@ -34,9 +34,12 @@
                     var comboExam = panel.down('#comboExam'),
                         storeExam = comboExam.store;
                     storeExam.load();
+                    //TODO разобраться почему если 2 раза кликнуть на одну кнопку, то ругается на cascade
+                    if(layout.activeItem){
+                        layout.activeItem.cascade(cascadeRemoveGrid, {scope:this, args:true});
+                        layout.activeItem.add(panel);
+                    }
 
-                    layout.activeItem.cascade(cascadeRemoveGrid);
-                    layout.activeItem.add(panel);
                 }
             },
             'toolbarUser #mainMI': {
@@ -45,7 +48,7 @@
 
                     var viewport = me.up('viewport'),
                         layout = viewport.getLayout();
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.setActiveItem(0);
                 }
             },

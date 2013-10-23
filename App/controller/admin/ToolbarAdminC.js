@@ -37,7 +37,7 @@
                         panel = Ext.create('App.view.admin.PanelUserV');
                     }
                     treeUser.getRootNode().expand(true);
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.activeItem.add(panel);
                 }
             },
@@ -47,7 +47,7 @@
 
                     var viewport = me.up('viewport'),
                         layout = viewport.getLayout();
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.setActiveItem(0);
                 }
             }, /*,
@@ -64,7 +64,7 @@
              if (!panel) {
              panel = Ext.create('App.view.manage.PanelSpecV');
              }
-             layout.activeItem.cascade(cascadeRemoveGrid);
+             layout.activeItem.cascade(cascadeRemoveGrid, false);
              layout.activeItem.add(panel);
              }
              }*/
@@ -79,7 +79,7 @@
                     if (!panel) {
                         panel = Ext.create('App.view.admin.PanelClassV');
                     }
-                    layout.activeItem.cascade(cascadeRemoveGrid);
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.activeItem.add(panel);
 
                     var gridPerson = Ext.ComponentQuery.query('gridPerson')[0],

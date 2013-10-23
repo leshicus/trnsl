@@ -16,7 +16,7 @@ $sql = "
     and examid = '$examid'
     and questionid = '$questionid'";
 try {
-    $res = $mysqli->query($sql);
+    //$res = $mysqli->query($sql);
 } catch (Exception $e) {
     $success = false;
 }

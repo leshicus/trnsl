@@ -43,11 +43,17 @@ switch ($act) {
                   result,
                   CONCAT_WS(' ',u.familyname,u.firstname,u.lastname) as fio,
                   u.login,
-                  reg
+                  reg,
+                  a.timelimit
 		        from `class` c,
-		             `user`  u
+		             `user`  u,
+		             `activity` a,
+		             `speciality` s,
+		             `group` g
 		        where u.userid = c.userid
-
+                and s.specid = u.specid
+                and g.groupid = s.groupid
+                and a.actid = g.actid
 		        order by fio";
         try {
             $res = $mysqli->query($sql);
