@@ -112,7 +112,6 @@ Ext.define('App.view.admin.GridPersonV', {
                 }
             }
         });
-//TODO дата блокировки/разблокировка/дата регистрации
 
         this.callParent(arguments);
         console.log('GridPerson end');

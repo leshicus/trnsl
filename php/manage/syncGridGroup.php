@@ -1,10 +1,11 @@
-<?
+<?session_start();
+$userid = $_SESSION['userid'];
+
 require_once("../db_connect.php");
 require_once('../PhpConsole.php');
 
 $act = $_REQUEST['act'];
 $data = json_decode(file_get_contents('php://input'), true);
-$success = true;
 
 switch ($act) {
     case 'create':
@@ -29,6 +30,7 @@ switch ($act) {
         if($success){
             echo '{rows:' . json_encode(
                 array('groupid' => $mysqli->insert_id)) . '}';
+            _log($mysqli, $userid, 15, 'Создание: '.$mysqli->insert_id.', '.$actid.', '.$groupnum);
         }else{
             echo json_encode(
                 array('success' => $success,
@@ -78,6 +80,7 @@ switch ($act) {
             echo json_encode(
                 array('success' => $success,
                     'message' => $sql));
+            _log($mysqli, $userid, 15, 'Изменение: '.$groupid.', '.$actid.', '.$groupnum);
         }else{
             echo json_encode(
                 array('success' => $success,
@@ -96,6 +99,13 @@ switch ($act) {
             $res = $mysqli->query($sql);
         } catch (Exception $e) {
             $success = false;
+        }
+
+        if($success){
+            echo json_encode(
+                array('success' => $success));
+            _log($mysqli, $userid, 15, 'Удаление: '.$groupid);
+        }else{
             echo json_encode(
                 array('success' => $success,
                     'message' => $sql));

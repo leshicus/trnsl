@@ -1,4 +1,5 @@
-﻿<?
+<?session_start();
+
 require_once("db_connect.php");
 require_once("include.php");
 
@@ -59,19 +60,6 @@ if (strtoupper($textPassword) == strtoupper($initPassword)) {
         if($nCNT){ // * доступ разрешен
             $message = 'Доступ разрешен.';
 
-            // * Залогируем вход в подсистему
-            $sql_log = "
-             insert into journal
-             (enterdate, userid, subsystemid)
-             values
-             ('$curdate','$userid','$comboSystem')
-            ";
-            try {
-                $res_log = $mysqli->query($sql_log);
-            } catch (Exception $e) {
-                $success = false;
-                $message = $sql_log;
-            }
         }else{  // * нет доступа к подсистеме
             $message = 'Доступ к подсистеме не разрешен.';
             $success = false;
@@ -82,14 +70,13 @@ if (strtoupper($textPassword) == strtoupper($initPassword)) {
     }
 }
 
-
-
-
 if ($success) {
     echo json_encode(
         array('success' => $success,
             'message' => $message,
             'userid' => $userid));
+    _log($mysqli, $userid, 1, 'Вход: '.$comboSystem);
+    $_SESSION['userid'] = $userid;
 } else {
     echo json_encode(
         array('success' => $success,

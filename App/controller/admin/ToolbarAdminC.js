@@ -50,24 +50,27 @@
                     layout.activeItem.cascade(cascadeRemoveGrid, false);
                     layout.setActiveItem(0);
                 }
-            }, /*,
-             'toolbarAdmin #journalMI': {
-             click: function (me, e, eOpts) {
-             console.log('click specialityMI');
+            },
+            'toolbarAdmin #logMI': {
+                click: function (me, e, eOpts) {
+                    console.log('click logMI');
 
-             var toolbarAdmin = me.up('toolbarAdmin'),
-             panel = Ext.ComponentQuery.query('panelSpec')[0],
-             storeSpec = Ext.StoreAdminr.lookup('manage.GridSpecS'),
-             viewport = me.up('viewport'),
-             layout = viewport.getLayout();
-             storeSpec.filter(function(){return false;});
-             if (!panel) {
-             panel = Ext.create('App.view.manage.PanelSpecV');
-             }
-             layout.activeItem.cascade(cascadeRemoveGrid, false);
-             layout.activeItem.add(panel);
-             }
-             }*/
+                    var toolbarAdmin = me.up('toolbarAdmin'),
+                        viewport = me.up('viewport'),
+                        panel = Ext.ComponentQuery.query('gridLog')[0],
+                        layout = viewport.getLayout();
+                    if (!panel) {
+                        panel = Ext.create('App.view.admin.GridLogV');
+                    }
+                    layout.activeItem.cascade(cascadeRemoveGrid, false);
+                    layout.activeItem.add(panel);
+
+                    /*panel.store.clearFilter();
+                    panel.store.filter(function () {
+                        return false
+                    });*/
+                }
+            },
             'toolbarAdmin #classMI': {
                 click: function (me, e, eOpts) {
                     console.log('click classMI');

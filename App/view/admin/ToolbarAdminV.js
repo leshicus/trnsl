@@ -16,7 +16,7 @@ Ext.define('App.view.admin.ToolbarAdminV', {
             },
             {
                 text: 'Журнал',
-                itemId: 'journalMI'
+                itemId: 'logMI'
             },
             {
                 text: 'Класс',

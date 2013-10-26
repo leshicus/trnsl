@@ -1,4 +1,5 @@
 <?
+// * без логирования. зачем оно тут?
 require_once("../db_connect.php");
 require_once('../PhpConsole.php');
 

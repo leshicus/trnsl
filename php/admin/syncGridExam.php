@@ -50,6 +50,7 @@ switch ($act) {
                           'userid' => $userid,
                           'examdate' => $curdate,
                           'fio' => $fio  )) . '}';
+            _log($mysqli, $userid, 17, 'Создание: '.$mysqli->insert_id.', '.$curdate);
         } else {
             echo json_encode(
                 array('success' => $success,
@@ -129,10 +130,18 @@ switch ($act) {
             $res = $mysqli->query($sql);
         } catch (Exception $e) {
             $success = false;
+            $message = $sql;
+        }
+
+        if ($success) {
+            _log($mysqli, $userid, 17, 'Удаление: '.$examid);
+            echo json_encode(array('success' => $success));
+        } else {
             echo json_encode(
                 array('success' => $success,
-                    'message' => $sql));
+                    'message' => $message));
         }
+
         break;
     default:
         echo "default";

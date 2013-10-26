@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" name="Default" comment="">
+    <list default="true" id="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" name="Default" comment="from idea">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/user/CardSelfS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/admin/ComboLogtypeS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/controller/admin/GridLogC.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/model/admin/GridLogM.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/admin/GridLogS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/view/admin/GridLogV.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/model/user/KnowM.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/user/KnowS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/controller/user/PanelSelfC.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/view/user/PanelSelfV.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/user/getKnow.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/admin/getLogtype.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/user/resetCard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/admin/syncGridLog.php" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil\php\setUserid.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridExamV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridExamV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridUserV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridUserV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" afterPath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/user/PanelTestV.js" afterPath="$PROJECT_DIR$/App/view/user/PanelTestV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/TabpanelAuthC.js" afterPath="$PROJECT_DIR$/App/controller/TabpanelAuthC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" afterPath="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" afterPath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" afterPath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/Viewport.js" afterPath="$PROJECT_DIR$/App/view/Viewport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/auth.php" afterPath="$PROJECT_DIR$/php/auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/changePassword.php" afterPath="$PROJECT_DIR$/php/changePassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/getCard.php" afterPath="$PROJECT_DIR$/php/user/getCard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/include.php" afterPath="$PROJECT_DIR$/php/include.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inf.txt" afterPath="$PROJECT_DIR$/inf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/register.php" afterPath="$PROJECT_DIR$/php/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/saveCard.php" afterPath="$PROJECT_DIR$/php/user/saveCard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/saveClass.php" afterPath="$PROJECT_DIR$/php/user/saveClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/setExam.php" afterPath="$PROJECT_DIR$/php/user/setExam.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridAct.php" afterPath="$PROJECT_DIR$/php/manage/syncGridAct.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridAnswer.php" afterPath="$PROJECT_DIR$/php/manage/syncGridAnswer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridExam.php" afterPath="$PROJECT_DIR$/php/admin/syncGridExam.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridGroup.php" afterPath="$PROJECT_DIR$/php/manage/syncGridGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridPerson.php" afterPath="$PROJECT_DIR$/php/admin/syncGridPerson.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridQuestion.php" afterPath="$PROJECT_DIR$/php/manage/syncGridQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridSigngroup.php" afterPath="$PROJECT_DIR$/php/admin/syncGridSigngroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridSpec.php" afterPath="$PROJECT_DIR$/php/manage/syncGridSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridUser.php" afterPath="$PROJECT_DIR$/php/admin/syncGridUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vars.js" afterPath="$PROJECT_DIR$/vars.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../nagruzka/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../nagruzka/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,22 +76,22 @@
     <favorites_list name="transoil" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6075303">
+    <splitter split-orientation="horizontal" split-proportion="0.59337914">
       <split-first>
         <leaf>
-          <file leaf-file-name="PanelTestC.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/App/controller/user/PanelTestC.js">
+          <file leaf-file-name="ToolbarAdminC.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="150" column="0" selection-start="7294" selection-end="7294" vertical-scroll-proportion="0.7096774" vertical-offset="2904" max-vertical-offset="9768">
+                <state line="70" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2398">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ToolbarUserC.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/App/controller/user/ToolbarUserC.js">
+          <file leaf-file-name="inf.txt" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/inf.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="21" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1606">
+                <state line="11" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.2936893" vertical-offset="0" max-vertical-offset="824">
                   <folding />
                 </state>
               </provider>
@@ -54,7 +100,7 @@
           <file leaf-file-name="PanelTestV.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="4" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="5060">
+                <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038">
                   <folding />
                 </state>
               </provider>
@@ -64,56 +110,13 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="vars.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="vars.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/vars.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="130" column="5" selection-start="4151" selection-end="4151" vertical-scroll-proportion="0.0" vertical-offset="2860" max-vertical-offset="4444">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="saveClass.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/user/saveClass.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="748">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="saveCard.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/user/saveCard.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="6" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="748">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getRole.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/admin/getRole.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getClassCheck.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/php/admin/getClassCheck.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="34" selection-start="379" selection-end="379" vertical-scroll-proportion="0.49418604" vertical-offset="119" max-vertical-offset="924">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getCard.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/user/getCard.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="18" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="2156">
-                  <folding />
+                <state line="66" column="8" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.6407767" vertical-offset="924" max-vertical-offset="4466">
+                  <folding>
+                    <marker date="1382792739491" expanded="false" signature="429:455" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -144,29 +147,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/php/user/saveClass.php" />
-        <option value="$PROJECT_DIR$/php/user/saveCard.php" />
-        <option value="$PROJECT_DIR$/php/user/getCard.php" />
         <option value="$PROJECT_DIR$/php/admin/syncGridPerson.php" />
-        <option value="$PROJECT_DIR$/App/model/admin/GridPersonM.js" />
-        <option value="$PROJECT_DIR$/App/view/Viewport.js" />
-        <option value="$PROJECT_DIR$/resources/style.css" />
-        <option value="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
-        <option value="$PROJECT_DIR$/App/controller/admin/PanelClassC.js" />
-        <option value="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" />
-        <option value="$PROJECT_DIR$/App/view/user/ToolbarUserV.js" />
-        <option value="$PROJECT_DIR$/App/view/user/PanelTestV.js" />
+        <option value="$PROJECT_DIR$/php/admin/syncGridUser.php" />
+        <option value="$PROJECT_DIR$/App/view/admin/PanelLogV.js" />
+        <option value="$PROJECT_DIR$/App/store/admin/GridLogS.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" />
+        <option value="$PROJECT_DIR$/php/register.php" />
+        <option value="$PROJECT_DIR$/App/model/admin/GridLogM.js" />
         <option value="$PROJECT_DIR$/vars.js" />
-        <option value="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" />
-        <option value="$PROJECT_DIR$/App/controller/user/PanelTestC.js" />
+        <option value="$PROJECT_DIR$/php/admin/getLogtype.php" />
+        <option value="$PROJECT_DIR$/App/store/admin/ComboLogtypeS.js" />
+        <option value="$PROJECT_DIR$/php/admin/syncGridLog.php" />
+        <option value="$PROJECT_DIR$/App/view/admin/GridLogV.js" />
+        <option value="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" />
+        <option value="$PROJECT_DIR$/App/controller/admin/GridLogC.js" />
+        <option value="$PROJECT_DIR$/inf.txt" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="width" value="1910" />
+    <option name="width" value="1920" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -232,7 +234,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,42 +294,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -434,32 +399,6 @@
               <option name="myItemId" value="store" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -498,50 +437,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -653,20 +548,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="208" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="225" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="208" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="208" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project_Default.xml" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="226" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1133" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="226" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="225" />
     <property name="Database.TableEditor.Splitter" value="0.9" />
@@ -679,9 +575,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="settings.github" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="web.server" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="transoil" serverId="cf574827-8ab0-412d-b6a9-d79594acd797" promptOnLocalOverwrite="false" uploadOnCheckin="cf574827-8ab0-412d-b6a9-d79594acd797" autoUpload="true" uploadOnSaveAll="true">
     <servers>
@@ -734,6 +630,7 @@
         <serverdata>
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="http://gitlab.loc/Volkov/transoil.git" local="$PROJECT_DIR$" web="http://gitlab.loc/Volkov/transoil.git" />
           </mappings>
           <excludedPaths>
             <ExcludedPath>
@@ -755,11 +652,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\JetBrains\src\transoil\php\user" />
-      <recent name="C:\JetBrains\src\transoil\App\model\user" />
-      <recent name="C:\JetBrains\src\transoil\App\store\user" />
       <recent name="C:\JetBrains\src\transoil\php\admin" />
-      <recent name="C:\JetBrains\src\transoil\App\view\user" />
+      <recent name="C:\JetBrains\src\transoil\App\store\admin" />
+      <recent name="C:\JetBrains\src\transoil\App\controller\admin" />
+      <recent name="C:\JetBrains\src\transoil\App\model\admin" />
+      <recent name="C:\JetBrains\src\transoil\App\view\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\JetBrains\src\transoil\php\user" />
@@ -848,27 +745,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="0" width="1910" height="1032" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1920" height="1032" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32508436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298573" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32410613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290993" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282887" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14810751" sideWeight="0.32712457" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15010571" sideWeight="0.6749156" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16882417" sideWeight="0.67128026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -891,110 +788,116 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/controller/manage/PanelQuestionC.js">
+    <entry file="file://$PROJECT_DIR$/App/view/manage/GridSpecV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="12" selection-start="5118" selection-end="5396" vertical-scroll-proportion="3.3495736" vertical-offset="0" max-vertical-offset="0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1213592" vertical-offset="924" max-vertical-offset="1782">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/manage/PanelSpecC.js">
+    <entry file="file://$PROJECT_DIR$/App/view/manage/GridActV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6820388" vertical-offset="1386" max-vertical-offset="2750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/manage/ToolbarManageC.js">
+    <entry file="file://$PROJECT_DIR$/App/store/admin/ComboRoleS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/TabpanelAuthC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="837">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
+    <entry file="file://$PROJECT_DIR$/php/admin/getLogtype.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="17" column="21" selection-start="393" selection-end="393" vertical-scroll-proportion="0.46401986" vertical-offset="0" max-vertical-offset="806">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vars.js">
+    <entry file="file://$PROJECT_DIR$/App/store/admin/ComboLogtypeS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="5" selection-start="4151" selection-end="4151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="10" column="6" selection-start="264" selection-end="264" vertical-scroll-proportion="0.2628435" vertical-offset="0" max-vertical-offset="837">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/user/getCard.php">
+    <entry file="file://$PROJECT_DIR$/App/view/manage/GridGroupV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="18" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="2156">
+        <state line="24" column="25" selection-start="700" selection-end="700" vertical-scroll-proportion="-0.40048543" vertical-offset="858" max-vertical-offset="1760">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/user/saveClass.php">
+    <entry file="file://$PROJECT_DIR$/App/model/admin/GridExamM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/user/saveCard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/admin/getTreeUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/admin/getRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelUserC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="36" selection-start="6207" selection-end="6207" vertical-scroll-proportion="4.367844" vertical-offset="0" max-vertical-offset="0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="837">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelClassC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.15956151" vertical-offset="0" max-vertical-offset="0">
+        <state line="120" column="32" selection-start="4363" selection-end="4363" vertical-scroll-proportion="0.88834953" vertical-offset="1908" max-vertical-offset="5544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/user/ToolbarUserC.js">
+    <entry file="file://$PROJECT_DIR$/App/store/admin/GridLogS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+        <state line="4" column="6" selection-start="136" selection-end="136" vertical-scroll-proportion="0.10513739" vertical-offset="0" max-vertical-offset="837">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/admin/getClassCheck.php">
+    <entry file="file://$PROJECT_DIR$/App/view/admin/GridLogV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="34" selection-start="379" selection-end="379" vertical-scroll-proportion="0.49418604" vertical-offset="119" max-vertical-offset="924">
+        <state line="20" column="28" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/user/PanelTestC.js">
+    <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="0" selection-start="7294" selection-end="7294" vertical-scroll-proportion="0.7096774" vertical-offset="2904" max-vertical-offset="9768">
+        <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/admin/syncGridLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.806452" vertical-offset="66" max-vertical-offset="1474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="8" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.6407767" vertical-offset="924" max-vertical-offset="4466">
+          <folding>
+            <marker date="1382792739491" expanded="false" signature="429:455" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/admin/GridLogC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="61" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.5519713" vertical-offset="1254" max-vertical-offset="2200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2398">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.2936893" vertical-offset="0" max-vertical-offset="824">
           <folding />
         </state>
       </provider>

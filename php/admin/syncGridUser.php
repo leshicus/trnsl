@@ -103,7 +103,8 @@ switch ($act) {
                         password = '$password',
                         enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
                     where userid = '$userid'
-            ";
+                ";
+                _log($mysqli, $userid, 3, 'Сброс пароля на начальный: '.$familyname.' '.$firstname.' '.$lastname);
             }else{
                 $sql = "
                     update `user`
@@ -114,19 +115,33 @@ switch ($act) {
                         specid = '$specid',
                         enddate = DATE_FORMAT(STR_TO_DATE('".$enddate."', '%d.%m.%Y %H:%i'),'%Y.%m.%d %H:%i')
                     where userid = '$userid'
-            ";
+                ";
+                if($enddate){
+                    _log($mysqli, $userid, 3, 'Блокировка пользователя: '.$familyname.' '.$firstname.' '.$lastname.', '.$enddate);
+                }else{
+                    _log($mysqli, $userid, 3, 'Изменение или разблокировка пользователя: '.$familyname.' '.$firstname.' '.$lastname.', '.$roleid.', '.$specid.', '.$enddate);
+                }
             }
 
             try {
                 $res = $mysqli->query($sql);
+                // * логирование
+                if(!$password){
+                    _log($mysqli, $userid, 8, 'Сброс пароля на начальный: '.$familyname.' '.$firstname.' '.$lastname);
+                }else{
+                    if($enddate){
+                        _log($mysqli, $userid, 3, 'Блокировка пользователя: '.$familyname.' '.$firstname.' '.$lastname.', '.$enddate);
+                    }else{
+                        _log($mysqli, $userid, 3, 'Изменение или разблокировка пользователя: '.$familyname.' '.$firstname.' '.$lastname.', '.$roleid.', '.$specid.', '.$enddate);
+                    }
+                }
             } catch (Exception $e) {
                 $success = false;
             }
         }
         if($success){
             echo json_encode(
-                array('success' => $success,
-                    'message' => $sql));
+                array('success' => $success));
         }else{
             echo json_encode(
                 array('success' => $success,
@@ -147,10 +162,17 @@ switch ($act) {
                 $res = $mysqli->query($sql);
             } catch (Exception $e) {
                 $success = false;
-                echo json_encode(
-                    array('success' => $success,
-                        'message' => $sql));
+                $message = $sql;
             }
+        }
+
+        if ($success) {
+            _log($mysqli, $userid, 3, 'Удаление: '.$userid);
+            echo json_encode(array('success' => $success));
+        } else {
+            echo json_encode(
+                array('success' => $success,
+                    'message' => $message));
         }
         break;
     default:

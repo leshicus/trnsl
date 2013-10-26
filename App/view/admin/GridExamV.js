@@ -12,7 +12,6 @@ Ext.define('App.view.admin.GridExamV', {
     columnLines: true,
     initComponent: function () {
         console.log('GridExam init');
-//TODO делать со временем
         /*this.plugins = [ Ext.create('Ext.grid.plugin.RowEditing', {
             clicksToEdit: 2
         })

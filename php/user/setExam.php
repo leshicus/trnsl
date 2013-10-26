@@ -21,6 +21,7 @@ try {
 if ($success) {
     echo json_encode(
         array('success' => $success));
+    _log($mysqli, $userid, 17, 'Подача заявки: '.$examid);
 } else {
     echo json_encode(
         array('success' => $success,

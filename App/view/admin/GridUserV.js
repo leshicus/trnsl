@@ -51,7 +51,6 @@ Ext.define('App.view.admin.GridUserV', {
                 }
             }
         });
-// TODO при первом открытии combo грузится повторно стор
         var comboRole = Ext.create('Ext.form.ComboBox', {
             store: 'admin.ComboRoleS',
             valueField: 'id',

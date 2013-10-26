@@ -1,10 +1,11 @@
-<?
+<?session_start();
+$userid = $_SESSION['userid'];
+
 require_once("../db_connect.php");
 require_once('../PhpConsole.php');
 
 $act = $_REQUEST['act'];
 $data = json_decode(file_get_contents('php://input'), true);
-$success = true;
 
 switch ($act) {
     case 'create':
@@ -87,7 +88,6 @@ switch ($act) {
                     where userid = '$userid'
                     and examid = '$examid'
             ";
-
             try {
                 $res = $mysqli->query($sql);
             } catch (Exception $e) {
@@ -96,8 +96,8 @@ switch ($act) {
         }
         if($success){
             echo json_encode(
-                array('success' => $success,
-                    'message' => $sql));
+                array('success' => $success));
+            _log($mysqli, $userid, 17, 'Регистрация: '.$examid);
         }else{
             echo json_encode(
                 array('success' => $success,
@@ -122,8 +122,8 @@ switch ($act) {
         }
         if($success){
             echo json_encode(
-                array('success' => $success,
-                    'message' => $sql));
+                array('success' => $success));
+            _log($mysqli, $userid, 17, 'Удаление регистрации: '.$examid);
         }else{
             echo json_encode(
                 array('success' => $success,

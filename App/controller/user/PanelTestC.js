@@ -1,8 +1,7 @@
 ﻿Ext.define('App.controller.user.PanelTestC', {
     extend: 'Ext.app.Controller',
     views: [
-        'user.PanelTestV'/*,
-         'user.PanelTestingV'*/
+        'user.PanelTestV'
     ],
     models: [
         'user.CardM'
@@ -138,10 +137,10 @@
                         questionId = storeCard.findRecord('rownum', rownum).get('questionid'),
                         buttonNextQuestion = panelTest.down('#nextQuestion'),
                         checkedAnswerId,
-                        correct = 0,
-                        taskDelayShowNewQuestion = Ext.create('Ext.util.DelayedTask', function () {
+                        correct = 0
+                        /*taskDelayShowNewQuestion = Ext.create('Ext.util.DelayedTask', function () {
                             this.showNextQuestion(buttonNextQuestion);
-                        }, this);
+                        }, this)*/;
                     var textAnswer = Ext.create('Ext.form.field.Display', {
                         labelWidth: 130,
                         name:'userAnswers'
@@ -185,7 +184,8 @@
                         textAnswer.setFieldStyle(colorStatusTextUnreg);
                     }
                     // * отсроченный показ следующего билета
-                    taskDelayShowNewQuestion.delay(1000);
+                    //taskDelayShowNewQuestion.delay(1000);
+                    this.showNextQuestion(buttonNextQuestion);
                 }
             },
             'panelTest #refreshComboExam': {
@@ -281,8 +281,10 @@
 
         // * проверим, что в билете необходимое число вопросов
         var maxRownum = this.getStoreMaxValue(storeCard, 'rownum'); //* число вопросов в билете
-        if (maxRownum != questionAmount) {
-            errorMessage('Ошибка генерации билета', 'Не верное число вопросов в билете. Нужно: ' + questionAmount + ', сгенерировано: ' + maxRownum);
+        if (maxRownum != questionMaxInCard) {
+            errorMessage('Ошибка генерации билета', 'Не верное число вопросов в билете. Нужно: ' + questionMaxInCard + ', сгенерировано: ' + maxRownum);
+            // * тут нужно сбросить билет, т.к. пользователь не проходил экзамен
+            this.cardReset();
         } else {
             var startTest = this.getPanelTest().down('#startTest');
             this.runTimer();
@@ -317,8 +319,8 @@
         // * вопросы
         question.setValue(questionText);
         questionAccordion.setTitle('Вопрос №' + num);
-        textAnswer.reset();
-        textQuestion.setValue(num + ' / ' + questionAmount);
+        //textAnswer.reset();
+        textQuestion.setValue(num + ' / ' + questionMaxInCard);
         questionNumber = num;
         // * ответы
         answerAccordion.removeAll(true);
@@ -336,10 +338,10 @@
                 }
             );
         });
-        panelCard.show();
+       // panelCard.show();
     },
     showNextQuestion: function (buttonNextQuestion) {
-        if (questionNumber < questionAmount) {
+        if (questionNumber < questionMaxInCard) {
             //* следующий вопрос, но только если Результат пустой
             var panelProgress = this.getPanelProgress(),
                 textResult = panelProgress.down('#textResult');
@@ -392,48 +394,29 @@
                 + '&balls=' + rightAnswersAmount
                 + '&result=' + result,
             success: function (response, options) {
-                // * откроем комбо Выберите экзамен, и кнопку Начать тестирование
-                /*var comboExam = this.getComboExam(),
-                    buttonStartTest = panelTest.down('#startTest'),
-                    textStatus = panelTest.down('#textStatus');
-                buttonStartTest.setDisabled(false);
-                comboExam.setReadOnly(false);*/
+                Ext.example.msg('Успех', 'Результаты экзамена сохранены');
             },
             failure: function () {
                 errorMessage('Ошибка подключения к базе', 'Результат экзамена не сохранен в базу');
             },
             scope: this
         });
-    }/*,
-
-    *//* Возврат полей в на
-    * 1. очистка панели Прогресс
-    * *//*
-    prepareForTest: function (combo) {
-        var panelProgress = combo.up('viewport').down('#panelProgress'),
-            textTime = panelProgress.down('#textTime'),
-            textQuestion = panelProgress.down('#textQuestion'),
-            textAnswer = panelProgress.down('#textAnswer'),
-            textResult = panelProgress.down('#textResult'),
-            textAnswers = panelProgress.query('displayfield[name=userAnswers]'),
-            panelCard = combo.up('viewport').down('#panelCard'),
-            questionAccordion = panelCard.down('#questionAccordion'),
-            question = questionAccordion.down('#question'),
-            answerAccordion = panelCard.down('#answerAccordion'),
-            answertext = panelCard.down('displayfield[name=answertext]');
-        textTime.reset();
-        textQuestion.reset();
-        textAnswer.reset();
-        textResult.reset();
-        if(textAnswers)
-            Ext.Array.forEach(textAnswers, function (item) {
-                panelProgress.remove(item);
-            }, this);
-        question.reset();
-        if(answertext)
-            Ext.Array.forEach(answertext, function (item) {
-                answerAccordion.remove(item);
-            }, this);
-    }*/
+    },
+    // * Отмена билета
+    cardReset: function () {
+        var panelTest = Ext.ComponentQuery.query('panelTest')[0],
+            comboExam = panelTest.down('#comboExam'),
+            examid = comboExam.getValue();
+        Ext.Ajax.request({
+            url: 'php/user/resetCard.php?examid=' + examid,
+            success: function (response, options) {
+                Ext.example.msg('Успех', 'Билет отменен');
+            },
+            failure: function () {
+                errorMessage('Ошибка подключения к базе', 'Билет не отменен');
+            },
+            scope: this
+        });
+    }
 
 });

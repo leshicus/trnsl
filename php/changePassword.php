@@ -1,12 +1,13 @@
-﻿<?
+<?session_start();
 require_once("db_connect.php");
 require_once("include.php");
 
+$userid = $_SESSION['userid'];
 $textLogin = $_REQUEST["textLogin"];
 $textOldPassword = $_REQUEST["textOldPassword"];
 $textNewPassword = $_REQUEST["textNewPassword"];
 $success = true;
-$message = '';
+$message = 'Пароль изменен';
 
 // * проверим, что все необходимые поля заполнены
 if (!$textLogin || !$textOldPassword || !$textNewPassword) {
@@ -77,6 +78,7 @@ if ($success) {
     echo json_encode(
         array('success' => $success,
             'message' => $message));
+    _log($mysqli, $userid, 8, 'Смена пользователем');
 } else {
     echo json_encode(
         array('success' => $success,

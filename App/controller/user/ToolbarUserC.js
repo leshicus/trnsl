@@ -22,8 +22,6 @@
         this.control({
             'toolbarUser #testMI': {
                 click: function (me, e, eOpts) {
-                    console.log('click testMI');
-
                     var toolbarUser = me.up('toolbarUser'),
                         viewport = me.up('viewport'),
                         panel = Ext.ComponentQuery.query('panelTest')[0],
@@ -44,8 +42,6 @@
             },
             'toolbarUser #mainMI': {
                 click: function (me, e, eOpts) {
-                    console.log('click mainMI');
-
                     var viewport = me.up('viewport'),
                         layout = viewport.getLayout();
                     layout.activeItem.cascade(cascadeRemoveGrid, false);
@@ -54,9 +50,17 @@
             },
             'toolbarUser #selfMI': {
                 click: function (me, e, eOpts) {
-                    console.log('click selfMI');
-
-
+                    var toolbarUser = me.up('toolbarUser'),
+                        viewport = me.up('viewport'),
+                        panel = Ext.ComponentQuery.query('panelSelf')[0],
+                        layout = viewport.getLayout();
+                    if (!panel) {
+                        panel = Ext.create('App.view.user.PanelSelfV');
+                    }
+                    if(layout.activeItem){
+                        layout.activeItem.cascade(cascadeRemoveGrid, {scope:this, args:false});
+                        layout.activeItem.add(panel);
+                    }
                 }
             }
         });

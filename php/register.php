@@ -95,6 +95,7 @@ if ($success) {
         array('success' => $success,
             'message' => $message,
             'userid' => $mysqli->insert_id));
+    _log($mysqli, $mysqli->insert_id, 3, 'Создание: '.$textFamily.' '.$textName.' '.$textLastname.', '.$comboSpeciality.', '.$textLogin);
 } else {
     echo json_encode(
         array('success' => $success,

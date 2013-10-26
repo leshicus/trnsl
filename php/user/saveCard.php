@@ -16,9 +16,18 @@ $sql = "
     and examid = '$examid'
     and questionid = '$questionid'";
 try {
-    //$res = $mysqli->query($sql);
+    $res = $mysqli->query($sql);
 } catch (Exception $e) {
     $success = false;
+    $message = $sql;
+}
+if ($success) {
+    //_log($mysqli, $userid, 9, $examid);
+    echo json_encode(array('success' => $success));
+} else {
+    echo json_encode(
+        array('success' => $success,
+            'message' => $message));
 }
 
 if ($mysqli)

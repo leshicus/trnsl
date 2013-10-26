@@ -57,7 +57,7 @@
             'tabAuth button[action=enter]': {
                 click: function (button) {
                     console.log('action=enter');
-                    userid = 0;
+                    //userid = 0;
                     var form = button.up('form').getForm();
                     /*if (form.isValid() ) {
                         form.submit({
@@ -70,10 +70,11 @@
                                     //userid = action.result.userid,
                                     viewport = button.up('viewport'),
                                     layout = viewport.getLayout();
-                                userid = 5;
+                                /*userid = 5;
                                 Ext.Ajax.request({
                                     url:'php/setUserid.php?userid='+userid
-                                });
+                                });*/
+                    //TODO проверить логирование auth
                                 if(subsystem){
                                     switch (subsystem){
                                         case 1: // * Тестирование
@@ -123,9 +124,6 @@
                             }
                         });
                     }*/
-
-// TODO сохранение userid в сессии
-
 
 
                 }

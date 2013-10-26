@@ -15,8 +15,24 @@ $extjs421_neptune = '
 	<link rel="stylesheet" type="text/css" href="../ext-4.2.1/examples/shared/example.css"/>
 	<script src="/ext-4.2.1/locale/ext-lang-ru.js"></script>
 ';
-
+$success = true;
 $initPassword = 'init';
 $initRole = 3;
 $questionAmount = 3; // * число вопросов в билете
+
+function _log($mysqli,$userid, $logtypeid, $parameter)
+{
+    $curdate = date('Y.m.d H:i');
+    $sql = "
+         insert into `log`
+         (logdate, userid, parameter, logtypeid)
+         values
+         ('$curdate', '$userid', '$parameter', '$logtypeid')
+        ";
+    try {
+        $res = $mysqli->query($sql);
+    } catch (Exception $e) {
+        $success = false;
+    }
+}
 ?>

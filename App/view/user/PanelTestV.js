@@ -68,7 +68,6 @@ Ext.define('App.view.user.PanelTestV', {
                                 xtype: 'displayfield',
                                 fieldLabel: 'Статус',
                                 itemId: 'textStatus',
-                                //labelWidth:70,
                                 value: '',
                                 readOnly: true
                             }
@@ -164,7 +163,7 @@ Ext.define('App.view.user.PanelTestV', {
                 frame: true,
                 margin: '0 0 0 5',
                 border: false,
-                hidden: true,
+                //hidden: true,
                 buttonAlign: 'left',
                 questionNumber: 0, // * текущий вопрос билета
                 buttons: [
@@ -183,7 +182,7 @@ Ext.define('App.view.user.PanelTestV', {
                 },
                 items: [
                     {
-                        //title: 'Вопрос №1',
+                        title: 'Вопрос',
                         itemId: 'questionAccordion',
                         flex: 1,
                         style: {

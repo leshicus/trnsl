@@ -1,4 +1,6 @@
-<?
+<?session_start();
+$userid = $_SESSION['userid'];
+
 require_once("../db_connect.php");
 require_once('../PhpConsole.php');
 
@@ -32,6 +34,7 @@ switch ($act) {
         if($success){
             echo '{rows:' . json_encode(
                 array('questionid' => $mysqli->insert_id)) . '}';
+            _log($mysqli, $userid, 14, 'Создание: '.$mysqli->insert_id.', '.$questiontext);
         }else{
             echo json_encode(
                 array('success' => $success,
@@ -82,8 +85,8 @@ switch ($act) {
         }
         if($success){
             echo json_encode(
-                array('success' => $success,
-                    'message' => $sql));
+                array('success' => $success));
+            _log($mysqli, $userid, 14, 'Исправление: '.$questionid.', '.$questiontext);
         }else{
             echo json_encode(
                 array('success' => $success,
@@ -102,9 +105,16 @@ switch ($act) {
             $res = $mysqli->query($sql);
         } catch (Exception $e) {
             $success = false;
+            $message = $sql;
+        }
+
+        if ($success) {
+            _log($mysqli, $userid, 14, 'Удаление: '.$questionid);
+            echo json_encode(array('success' => $success));
+        } else {
             echo json_encode(
                 array('success' => $success,
-                    'message' => $sql));
+                    'message' => $message));
         }
         break;
     default:

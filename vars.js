@@ -66,7 +66,8 @@ var gridHeight = 600,
     },
     rightAnswersAmount = 0, // * количество данных правильных ответов
     questionNumber = 0, // * текущий номер вопроса
-    questionAmount = 3, // * число вопросов в билете
+    questionMaxInCard = 3, // * число вопросов в билете
+    questionMaxInCardSelf = 3, // * число вопросов в билете
     passAmount = 2, // * число правильных ответов для успешного прохождения экзамена
     runnerExamTest = new Ext.util.TaskRunner(); // * задание для времени тестов
 

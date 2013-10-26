@@ -69,7 +69,9 @@ Ext.application({
         'admin.ToolbarAdminC',
         'admin.PanelUserC',
         'admin.PanelClassC',
+        'admin.GridLogC',
         'user.ToolbarUserC',
-        'user.PanelTestC'
+        'user.PanelTestC',
+        'user.PanelSelfC'
     ]
 });

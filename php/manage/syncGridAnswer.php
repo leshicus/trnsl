@@ -1,11 +1,12 @@
-<?
+<?session_start();
+$userid = $_SESSION['userid'];
+
 require_once("../db_connect.php");
 require_once('../PhpConsole.php');
 
 $act = $_REQUEST['act'];
 $data = json_decode(file_get_contents('php://input'), true);
 $success = true;
-$sql = '';
 
 switch ($act) {
     case 'create':
@@ -44,6 +45,7 @@ switch ($act) {
         if ($success) {
             echo '{rows:' . json_encode(
                 array('answerid' => $mysqli->insert_id)) . '}';
+            _log($mysqli, $userid, 13, 'Создание: '.$mysqli->insert_id.', '.$answertext);
         } else {
             echo json_encode(
                 array('success' => $success,
@@ -107,6 +109,7 @@ switch ($act) {
         if ($success) {
             echo json_encode(
                 array('success' => $success));
+            _log($mysqli, $userid, 13, 'Изменение: '.$answertext);
         } else {
             echo json_encode(
                 array('success' => $success,
@@ -124,6 +127,7 @@ switch ($act) {
             ";
             try {
                 $res = $mysqli->query($sql);
+                _log($mysqli, $userid, 13, 'Удаление: '.$answerid);
             } catch (Exception $e) {
                 $success = false;
             }
