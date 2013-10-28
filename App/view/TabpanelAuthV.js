@@ -13,7 +13,7 @@ Ext.define('App.view.TabpanelAuthV', {
         console.log('TabpanelAuthV init');
 
         this.items = [
-            {xtype: 'tabAuth'},
+            /*{xtype: 'tabAuth'},*/
             {xtype: 'tabReg'}
         ];
 

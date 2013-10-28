@@ -20,38 +20,6 @@ Ext.define('App.view.TabAuthV', {
                 afterLabelTextTpl: required,
                 fieldLabel: 'Логин'
             },
-        /*textFamily = {
-         xtype: 'textfield',
-         itemId: 'textFamily',
-         name: 'textFamily',
-         //allowBlank: false,
-         fieldLabel: 'Фамилия'
-         },
-         textName = {
-         xtype: 'textfield',
-         itemId: 'textName',
-         name: 'textName',
-         //allowBlank: false,
-         fieldLabel: 'Имя'
-         },
-         textLastname = {
-         xtype: 'textfield',
-         itemId: 'textLastname',
-         name: 'textLastname',
-         fieldLabel: 'Отчество'
-         },
-         comboSpeciality = {
-         xtype: 'combo',
-         store: 'manage.GridSpecS',
-         itemId: 'comboSpeciality',
-         name: 'comboSpeciality',
-         queryMode: 'local',
-         editable: false,
-         valueField: 'specid',
-         displayField: 'specname',
-         //allowBlank: false,
-         fieldLabel: 'Специальность'
-         },*/
             comboSystem = {
                 xtype: 'combo',
                 store: dataSystem,
@@ -117,35 +85,6 @@ Ext.define('App.view.TabAuthV', {
                     buttonChangePas
                 ]
             });
-        /*fieldsetUser = Ext.create('Ext.form.FieldSet', {
-         xtype: 'fieldset',
-         title: 'Идентификация по ФИО',
-         itemId: 'fieldsetUser',
-         defaults: {
-         anchor: '100%',
-         labelWidth: 120
-         },
-         items: [
-         textFamily,
-         textName,
-         textLastname,
-         comboSpeciality
-         ]
-         }),
-         fieldsetAuth = Ext.create('Ext.form.FieldSet', {
-         xtype: 'fieldset',
-         title: 'Идентификация по логину',
-         itemId: 'fieldsetAuth',
-         defaults: {
-         anchor: '100%',
-         labelWidth: 120
-         },
-         items: [
-         comboSystem,
-         textLogin,
-         textPassword
-         ]
-         });*/
 
         this.items = [
             /*fieldsetUser,

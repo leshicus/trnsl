@@ -3,7 +3,7 @@ Ext.define('App.view.TabRegV', {
     extend: 'Ext.form.Panel',
     alias: 'widget.tabReg',
     itemId: 'tabReg',
-    url:'php/register.php',
+    //url:'php/register.php',
     layout: {
         type: 'vbox',
         align: 'stretch'
@@ -65,34 +65,6 @@ Ext.define('App.view.TabRegV', {
                 afterLabelTextTpl: required
                 //style: 'margin-top:15px'
             };
-            /*fieldsetUser = Ext.create('Ext.form.FieldSet', {
-                xtype: 'fieldset',
-                title: 'ФИО',
-                itemId: 'fieldsetUser',
-                defaults: {
-                    anchor: '100%',
-                    labelWidth: 120
-                },
-                items: [
-                    textFamily,
-                    textName,
-                    textLastname,
-                    comboSpeciality
-                ]
-            }),
-            fieldsetAuth = Ext.create('Ext.form.FieldSet', {
-                xtype: 'fieldset',
-                title: 'Логин',
-                itemId: 'fieldsetAuth',
-                defaults: {
-                    anchor: '100%',
-                    labelWidth: 120
-                },
-                items: [
-                    textLogin,
-                    textPassword
-                ]
-            });*/
 
         this.items = [
             /*fieldsetUser,
