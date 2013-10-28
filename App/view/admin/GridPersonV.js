@@ -94,6 +94,11 @@ Ext.define('App.view.admin.GridPersonV', {
                 {
                     text:'Снять регистрацию',
                     itemId:'menuUnreg'
+                },
+                '-',
+                {
+                    text:'Печать: одиночная ведомость',
+                    itemId:'menuPrintOne'
                 }
             ]
         });

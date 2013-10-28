@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" name="Default" comment="from idea">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/user/CardSelfS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/admin/ComboLogtypeS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/controller/admin/GridLogC.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/model/admin/GridLogM.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/admin/GridLogS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/view/admin/GridLogV.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/model/user/KnowM.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/store/user/KnowS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/controller/user/PanelSelfC.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/view/user/PanelSelfV.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/user/getKnow.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/admin/getLogtype.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/user/resetCard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/admin/syncGridLog.php" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil\php\setUserid.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridExamV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridExamV.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridUserV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridUserV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" afterPath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/user/PanelTestV.js" afterPath="$PROJECT_DIR$/App/view/user/PanelTestV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/TabpanelAuthC.js" afterPath="$PROJECT_DIR$/App/controller/TabpanelAuthC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" afterPath="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" afterPath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" afterPath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/Viewport.js" afterPath="$PROJECT_DIR$/App/view/Viewport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/auth.php" afterPath="$PROJECT_DIR$/php/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/changePassword.php" afterPath="$PROJECT_DIR$/php/changePassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/getCard.php" afterPath="$PROJECT_DIR$/php/user/getCard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/include.php" afterPath="$PROJECT_DIR$/php/include.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inf.txt" afterPath="$PROJECT_DIR$/inf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/register.php" afterPath="$PROJECT_DIR$/php/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/saveCard.php" afterPath="$PROJECT_DIR$/php/user/saveCard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/saveClass.php" afterPath="$PROJECT_DIR$/php/user/saveClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/setExam.php" afterPath="$PROJECT_DIR$/php/user/setExam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridAct.php" afterPath="$PROJECT_DIR$/php/manage/syncGridAct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridAnswer.php" afterPath="$PROJECT_DIR$/php/manage/syncGridAnswer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridExam.php" afterPath="$PROJECT_DIR$/php/admin/syncGridExam.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridGroup.php" afterPath="$PROJECT_DIR$/php/manage/syncGridGroup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridPerson.php" afterPath="$PROJECT_DIR$/php/admin/syncGridPerson.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridQuestion.php" afterPath="$PROJECT_DIR$/php/manage/syncGridQuestion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridSigngroup.php" afterPath="$PROJECT_DIR$/php/admin/syncGridSigngroup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/syncGridSpec.php" afterPath="$PROJECT_DIR$/php/manage/syncGridSpec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/syncGridUser.php" afterPath="$PROJECT_DIR$/php/admin/syncGridUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vars.js" afterPath="$PROJECT_DIR$/vars.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../nagruzka/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../nagruzka/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="transoil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,28 +34,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.59337914">
       <split-first>
         <leaf>
-          <file leaf-file-name="ToolbarAdminC.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js">
+          <file leaf-file-name="GridPersonV.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/App/view/admin/GridPersonV.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2398">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="inf.txt" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/inf.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.2936893" vertical-offset="0" max-vertical-offset="824">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PanelTestV.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038">
+                <state line="88" column="19" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.42054957" vertical-offset="1584" max-vertical-offset="3124">
                   <folding />
                 </state>
               </provider>
@@ -147,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/admin/syncGridPerson.php" />
         <option value="$PROJECT_DIR$/php/admin/syncGridUser.php" />
         <option value="$PROJECT_DIR$/App/view/admin/PanelLogV.js" />
         <option value="$PROJECT_DIR$/App/store/admin/GridLogS.js" />
@@ -163,6 +99,7 @@
         <option value="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" />
         <option value="$PROJECT_DIR$/App/controller/admin/GridLogC.js" />
         <option value="$PROJECT_DIR$/inf.txt" />
+        <option value="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
       </list>
     </option>
   </component>
@@ -788,13 +725,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/view/manage/GridSpecV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1213592" vertical-offset="924" max-vertical-offset="1782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/view/manage/GridActV.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6820388" vertical-offset="1386" max-vertical-offset="2750">
@@ -858,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/admin/syncGridLog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="12" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.806452" vertical-offset="66" max-vertical-offset="1474">
@@ -888,6 +811,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.2936893" vertical-offset="0" max-vertical-offset="824">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2398">
@@ -895,9 +825,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inf.txt">
+    <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.2936893" vertical-offset="0" max-vertical-offset="824">
+        <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/view/admin/GridPersonV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="19" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.42054957" vertical-offset="1584" max-vertical-offset="3124">
           <folding />
         </state>
       </provider>
