@@ -3,7 +3,7 @@ Ext.define('App.view.TabRegV', {
     extend: 'Ext.form.Panel',
     alias: 'widget.tabReg',
     itemId: 'tabReg',
-    url:'php/register.php',
+    //url:'php/register.php',
     layout: {
         type: 'vbox',
         align: 'stretch'

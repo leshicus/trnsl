@@ -5,7 +5,7 @@ include('php/include.php');
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Тестирование</title>
+    <title>Тестирование_test</title>
 
     <?echo $extjs421_neptune;?>
     <style>

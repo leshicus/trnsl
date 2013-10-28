@@ -2,8 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" name="Default" comment="from idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/Viewport.js" afterPath="$PROJECT_DIR$/App/view/Viewport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../nagruzka/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../nagruzka/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\administrator.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\auth.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\combo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\grid.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\store.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\tab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\OLD_TEST.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\archive\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\store.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\lib.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\add.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\delete.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\get.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\add.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\delete.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\get.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\get_seq.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\distribution\get.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\distribution\update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\identification.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\parsing\example.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\parsing\parse.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\add.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\delete.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\get.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\get_seq.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\registration.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\add.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\delete.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\get.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\update.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\testing\check_answer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\testing\get_answer.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\testing\get_question.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\start.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\user_test.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\JetBrains\src\transoil_test\.idea\transoil.iml" afterPath="$PROJECT_DIR$/.idea/transoil_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.js" afterPath="$PROJECT_DIR$/1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridActV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridActV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridAnswerV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridAnswerV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridExamV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridExamV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridGroupV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridGroupV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridLogV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridLogV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridQuestionV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridQuestionV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridSigngroupV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridSigngroupV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/manage/GridSpecS.js" afterPath="$PROJECT_DIR$/App/store/manage/GridSpecS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridSpecV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridSpecV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridUserV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridUserV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/user/KnowS.js" afterPath="$PROJECT_DIR$/App/store/user/KnowS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelActC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelActC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/admin/PanelClassC.js" afterPath="$PROJECT_DIR$/App/controller/admin/PanelClassC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelGroupC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelGroupC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelQuestionC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelQuestionC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/PanelSelfC.js" afterPath="$PROJECT_DIR$/App/controller/user/PanelSelfC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/user/PanelSelfV.js" afterPath="$PROJECT_DIR$/App/view/user/PanelSelfV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelSpecC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelSpecC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" afterPath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/user/PanelTestV.js" afterPath="$PROJECT_DIR$/App/view/user/PanelTestV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/admin/PanelUserC.js" afterPath="$PROJECT_DIR$/App/controller/admin/PanelUserC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/TabAuthV.js" afterPath="$PROJECT_DIR$/App/view/TabAuthV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/TabRegV.js" afterPath="$PROJECT_DIR$/App/view/TabRegV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/TabpanelAuthV.js" afterPath="$PROJECT_DIR$/App/view/TabpanelAuthV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" afterPath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/ToolbarManageV.js" afterPath="$PROJECT_DIR$/App/view/manage/ToolbarManageV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" afterPath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/manage/TreeQuestionS.js" afterPath="$PROJECT_DIR$/App/store/manage/TreeQuestionS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/TreeQuestionV.js" afterPath="$PROJECT_DIR$/App/view/manage/TreeQuestionV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/manage/TreeSpecS.js" afterPath="$PROJECT_DIR$/App/store/manage/TreeSpecS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/TreeSpecV.js" afterPath="$PROJECT_DIR$/App/view/manage/TreeSpecV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/admin/TreeUserS.js" afterPath="$PROJECT_DIR$/App/store/admin/TreeUserS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/TreeUserV.js" afterPath="$PROJECT_DIR$/App/view/admin/TreeUserV.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/auth.php" afterPath="$PROJECT_DIR$/php/auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/changePassword.php" afterPath="$PROJECT_DIR$/php/changePassword.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/getCard.php" afterPath="$PROJECT_DIR$/php/user/getCard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/getNextval.php" afterPath="$PROJECT_DIR$/php/manage/getNextval.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/getTreeQuestion.php" afterPath="$PROJECT_DIR$/php/manage/getTreeQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/getTreeSpec.php" afterPath="$PROJECT_DIR$/php/manage/getTreeSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/getTreeUser.php" afterPath="$PROJECT_DIR$/php/admin/getTreeUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inf.txt" afterPath="$PROJECT_DIR$/inf.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/register.php" afterPath="$PROJECT_DIR$/php/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/resetCard.php" afterPath="$PROJECT_DIR$/php/user/resetCard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/style.css" afterPath="$PROJECT_DIR$/resources/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vars.js" afterPath="$PROJECT_DIR$/vars.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="transoil.iws" />
@@ -34,19 +124,55 @@
     <splitter split-orientation="horizontal" split-proportion="0.59337914">
       <split-first>
         <leaf>
-          <file leaf-file-name="GridPersonV.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/App/view/admin/GridPersonV.js">
+          <file leaf-file-name="TabpanelAuthV.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/view/TabpanelAuthV.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="19" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="3124">
+                <state line="15" column="33" selection-start="357" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TabpanelAuthV.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/App/view/TabpanelAuthV.js">
+          <file leaf-file-name="inf.txt" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/inf.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="16" selection-start="179" selection-end="179" vertical-scroll-proportion="0.1577061" vertical-offset="0" max-vertical-offset="837">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="242">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GridSpecS.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/store/manage/GridSpecS.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="6" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="814">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="KnowS.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/store/user/KnowS.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="3" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="28" selection-start="165" selection-end="165" vertical-scroll-proportion="0.191067" vertical-offset="0" max-vertical-offset="806">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TabRegV.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/App/view/TabRegV.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="6" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2838">
                   <folding />
                 </state>
               </provider>
@@ -56,13 +182,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="vars.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="vars.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/vars.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="3" selection-start="1145" selection-end="1145" vertical-scroll-proportion="1.2014563" vertical-offset="0" max-vertical-offset="4466">
-                  <folding>
-                    <marker date="1382792739491" expanded="false" signature="429:455" placeholder="..." />
-                  </folding>
+                <state line="45" column="3" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="4466">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TabpanelAuthC.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/App/controller/TabpanelAuthC.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.42718446" vertical-offset="0" max-vertical-offset="3806">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -82,6 +215,7 @@
         <option value="Leshicus" />
       </list>
     </option>
+    <option name="SYNC_SETTING" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -93,10 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/App/view/admin/PanelLogV.js" />
-        <option value="$PROJECT_DIR$/App/store/admin/GridLogS.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" />
         <option value="$PROJECT_DIR$/php/register.php" />
         <option value="$PROJECT_DIR$/App/model/admin/GridLogM.js" />
         <option value="$PROJECT_DIR$/vars.js" />
@@ -109,6 +239,10 @@
         <option value="$PROJECT_DIR$/inf.txt" />
         <option value="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
         <option value="$PROJECT_DIR$/App/view/TabpanelAuthV.js" />
+        <option value="$PROJECT_DIR$/App/view/TabRegV.js" />
+        <option value="$PROJECT_DIR$/App/store/manage/GridSpecS.js" />
+        <option value="$PROJECT_DIR$/App/store/user/KnowS.js" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -184,73 +318,27 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -264,11 +352,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -276,7 +364,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="store" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -286,11 +374,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -298,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="store" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -308,33 +396,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -348,73 +414,25 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
+              <option name="myItemId" value="transoil_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -423,72 +441,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transoil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,7 +457,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="208" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project_Default.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../transoil" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="226" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1133" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1133" />
@@ -525,7 +477,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig" serverName="transoil" serverId="cf574827-8ab0-412d-b6a9-d79594acd797" promptOnLocalOverwrite="false" uploadOnCheckin="cf574827-8ab0-412d-b6a9-d79594acd797" autoUpload="true" uploadOnSaveAll="true">
+  <component name="PublishConfig" serverName="transoil_test" serverId="e0a05491-8b1e-4f28-91f4-6ac6a6243c67" promptOnLocalOverwrite="false" uploadOnCheckin="cf574827-8ab0-412d-b6a9-d79594acd797" autoUpload="true" uploadOnSaveAll="true">
     <servers>
       <server id="0d34d46c-4024-4c3f-9eac-0c7df08ca52c">
         <serverdata>
@@ -575,13 +527,15 @@
       <server id="cf574827-8ab0-412d-b6a9-d79594acd797">
         <serverdata>
           <mappings>
-            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
-            <mapping deploy="http://gitlab.loc/Volkov/transoil.git" local="$PROJECT_DIR$" web="http://gitlab.loc/Volkov/transoil.git" />
+            <mapping deploy="\" local="$PROJECT_DIR$/../transoil" web="/" />
           </mappings>
           <excludedPaths>
             <ExcludedPath>
               <option name="local" value="true" />
               <option name="path" value="C:\JetBrains\src\transoil\ext-4.2.1" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="path" value="ext-4.2.1" />
             </ExcludedPath>
           </excludedPaths>
         </serverdata>
@@ -591,6 +545,22 @@
           <mappings>
             <mapping local="$PROJECT_DIR$" />
           </mappings>
+        </serverdata>
+      </server>
+      <server id="e0a05491-8b1e-4f28-91f4-6ac6a6243c67">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="C:\JetBrains\src\transoil_test\ext-4.2.1" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="path" value="ext-4.2.1" />
+            </ExcludedPath>
+          </excludedPaths>
         </serverdata>
       </server>
     </servers>
@@ -605,11 +575,11 @@
       <recent name="C:\JetBrains\src\transoil\App\view\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JetBrains\src\transoil_test" />
       <recent name="C:\JetBrains\src\transoil\php\user" />
       <recent name="C:\JetBrains\src\transoil\resources\img" />
       <recent name="C:\JetBrains\src\transoil\php\admin" />
       <recent name="C:\JetBrains\src\transoil\App\view\admin" />
-      <recent name="C:\JetBrains\src\transoil\App\controller\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -697,20 +667,20 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32410613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290993" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282887" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14810751" sideWeight="0.32712457" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16882417" sideWeight="0.67128026" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17745416" sideWeight="0.6758939" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14810751" sideWeight="0.32712457" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -734,116 +704,100 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/admin/getLogtype.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="393" selection-end="393" vertical-scroll-proportion="0.46401986" vertical-offset="0" max-vertical-offset="806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/store/admin/ComboLogtypeS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="264" selection-end="264" vertical-scroll-proportion="0.2628435" vertical-offset="0" max-vertical-offset="837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/view/manage/GridGroupV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="700" selection-end="700" vertical-scroll-proportion="-0.40048543" vertical-offset="858" max-vertical-offset="1760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/model/admin/GridExamM.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/controller/admin/PanelClassC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="32" selection-start="4363" selection-end="4363" vertical-scroll-proportion="0.88834953" vertical-offset="1908" max-vertical-offset="5544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/store/admin/GridLogS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="136" selection-end="136" vertical-scroll-proportion="0.10513739" vertical-offset="0" max-vertical-offset="837">
-          <folding />
-        </state>
+        <state line="4" column="6" selection-start="136" selection-end="136" vertical-scroll-proportion="0.10513739" vertical-offset="0" max-vertical-offset="837" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/view/admin/GridLogV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760">
-          <folding />
-        </state>
+        <state line="20" column="28" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1760" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/admin/syncGridLog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.806452" vertical-offset="66" max-vertical-offset="1474">
-          <folding />
-        </state>
+        <state line="14" column="12" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.806452" vertical-offset="66" max-vertical-offset="1474" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/admin/GridLogC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="61" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.5519713" vertical-offset="1254" max-vertical-offset="2200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inf.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="519" selection-end="519" vertical-scroll-proportion="0.2936893" vertical-offset="0" max-vertical-offset="824">
-          <folding />
-        </state>
+        <state line="78" column="61" selection-start="2760" selection-end="2760" vertical-scroll-proportion="0.5519713" vertical-offset="1254" max-vertical-offset="2200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2398">
-          <folding />
-        </state>
+        <state line="70" column="25" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2398" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/view/user/PanelTestV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038">
-          <folding />
-        </state>
+        <state line="49" column="32" selection-start="1673" selection-end="1741" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="5038" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/view/Viewport.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2354">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2354" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="3" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="4466">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/view/admin/GridPersonV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="19" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="3124">
+        <state line="88" column="19" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.42004773" vertical-offset="1584" max-vertical-offset="3124">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="3" selection-start="1145" selection-end="1145" vertical-scroll-proportion="1.2014563" vertical-offset="0" max-vertical-offset="4466">
-          <folding>
-            <marker date="1382792739491" expanded="false" signature="429:455" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/view/TabpanelAuthV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="179" selection-end="179" vertical-scroll-proportion="0.1577061" vertical-offset="0" max-vertical-offset="837">
+        <state line="15" column="33" selection-start="357" selection-end="380" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/view/TabRegV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2838">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="838">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/store/manage/GridSpecS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/store/user/KnowS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="165" selection-end="165" vertical-scroll-proportion="0.191067" vertical-offset="0" max-vertical-offset="806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/controller/TabpanelAuthC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.42718446" vertical-offset="0" max-vertical-offset="3806">
           <folding />
         </state>
       </provider>
