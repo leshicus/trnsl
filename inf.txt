@@ -2,4 +2,4 @@
 1./App/view/TabpanelAuthV.js /*{xtype: 'tabAuth'},*/
 2./App/view/TabRegV.js //url:'php/register.php',
 3./App/store/manage/GridSpecS.js //autoLoad: true,
-4./App/store/user/KnowS.js //autoLoad: true,
+4./App/store/user/KnowS.js //autoLoad: true

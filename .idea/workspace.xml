@@ -2,98 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d864ba5-38cf-4dcd-8cd9-2d285f1be95a" name="Default" comment="from idea">
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\administrator.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\auth.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\combo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\grid.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\store.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\OLD_TEST.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\archive\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\main.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\js\testing\store.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\lib.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\add.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\delete.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\get.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\activity\update.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\add.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\delete.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\get.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\get_seq.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\answer\update.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\distribution\get.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\distribution\update.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\identification.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\parsing\example.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\parsing\parse.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\add.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\delete.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\get.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\get_seq.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\question\update.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\registration.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\add.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\delete.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\get.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\subject\update.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\testing\check_answer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\testing\get_answer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\php_old\testing\get_question.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\start.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\JetBrains\src\transoil_test\user_test.php" afterPath="" />
-      <change type="MOVED" beforePath="C:\JetBrains\src\transoil_test\.idea\transoil.iml" afterPath="$PROJECT_DIR$/.idea/transoil_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.js" afterPath="$PROJECT_DIR$/1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridActV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridActV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridAnswerV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridAnswerV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridExamV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridExamV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridGroupV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridGroupV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridLogV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridLogV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridQuestionV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridQuestionV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridSigngroupV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridSigngroupV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/manage/GridSpecS.js" afterPath="$PROJECT_DIR$/App/store/manage/GridSpecS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/GridSpecV.js" afterPath="$PROJECT_DIR$/App/view/manage/GridSpecV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/GridUserV.js" afterPath="$PROJECT_DIR$/App/view/admin/GridUserV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/user/KnowS.js" afterPath="$PROJECT_DIR$/App/store/user/KnowS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelActC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelActC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/admin/PanelClassC.js" afterPath="$PROJECT_DIR$/App/controller/admin/PanelClassC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelGroupC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelGroupC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelQuestionC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelQuestionC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/PanelSelfC.js" afterPath="$PROJECT_DIR$/App/controller/user/PanelSelfC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/user/PanelSelfV.js" afterPath="$PROJECT_DIR$/App/view/user/PanelSelfV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/manage/PanelSpecC.js" afterPath="$PROJECT_DIR$/App/controller/manage/PanelSpecC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" afterPath="$PROJECT_DIR$/App/controller/user/PanelTestC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/user/PanelTestV.js" afterPath="$PROJECT_DIR$/App/view/user/PanelTestV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/admin/PanelUserC.js" afterPath="$PROJECT_DIR$/App/controller/admin/PanelUserC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/TabAuthV.js" afterPath="$PROJECT_DIR$/App/view/TabAuthV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/TabRegV.js" afterPath="$PROJECT_DIR$/App/view/TabRegV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/TabpanelAuthV.js" afterPath="$PROJECT_DIR$/App/view/TabpanelAuthV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" afterPath="$PROJECT_DIR$/App/view/admin/ToolbarAdminV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/ToolbarManageV.js" afterPath="$PROJECT_DIR$/App/view/manage/ToolbarManageV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" afterPath="$PROJECT_DIR$/App/controller/user/ToolbarUserC.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/manage/TreeQuestionS.js" afterPath="$PROJECT_DIR$/App/store/manage/TreeQuestionS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/TreeQuestionV.js" afterPath="$PROJECT_DIR$/App/view/manage/TreeQuestionV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/manage/TreeSpecS.js" afterPath="$PROJECT_DIR$/App/store/manage/TreeSpecS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/manage/TreeSpecV.js" afterPath="$PROJECT_DIR$/App/view/manage/TreeSpecV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/store/admin/TreeUserS.js" afterPath="$PROJECT_DIR$/App/store/admin/TreeUserS.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/view/admin/TreeUserV.js" afterPath="$PROJECT_DIR$/App/view/admin/TreeUserV.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/auth.php" afterPath="$PROJECT_DIR$/php/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/changePassword.php" afterPath="$PROJECT_DIR$/php/changePassword.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/getCard.php" afterPath="$PROJECT_DIR$/php/user/getCard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/getNextval.php" afterPath="$PROJECT_DIR$/php/manage/getNextval.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/getTreeQuestion.php" afterPath="$PROJECT_DIR$/php/manage/getTreeQuestion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/manage/getTreeSpec.php" afterPath="$PROJECT_DIR$/php/manage/getTreeSpec.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/admin/getTreeUser.php" afterPath="$PROJECT_DIR$/php/admin/getTreeUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inf.txt" afterPath="$PROJECT_DIR$/inf.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/register.php" afterPath="$PROJECT_DIR$/php/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user/resetCard.php" afterPath="$PROJECT_DIR$/php/user/resetCard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/style.css" afterPath="$PROJECT_DIR$/resources/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vars.js" afterPath="$PROJECT_DIR$/vars.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="transoil.iws" />
@@ -133,10 +42,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="inf.txt" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="inf.txt" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/inf.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="242">
+                <state line="4" column="43" selection-start="207" selection-end="207" vertical-scroll-proportion="0.10513739" vertical-offset="0" max-vertical-offset="837">
                   <folding />
                 </state>
               </provider>
@@ -160,10 +69,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="28" selection-start="165" selection-end="165" vertical-scroll-proportion="0.191067" vertical-offset="0" max-vertical-offset="806">
+                <state line="5" column="6" selection-start="64" selection-end="64" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="660">
                   <folding />
                 </state>
               </provider>
@@ -194,7 +103,7 @@
           <file leaf-file-name="TabpanelAuthC.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/App/controller/TabpanelAuthC.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.42718446" vertical-offset="0" max-vertical-offset="3806">
+                <state line="18" column="6" selection-start="366" selection-end="366" vertical-scroll-proportion="0.48058254" vertical-offset="0" max-vertical-offset="3806">
                   <folding />
                 </state>
               </provider>
@@ -236,13 +145,13 @@
         <option value="$PROJECT_DIR$/App/view/admin/GridLogV.js" />
         <option value="$PROJECT_DIR$/App/controller/admin/ToolbarAdminC.js" />
         <option value="$PROJECT_DIR$/App/controller/admin/GridLogC.js" />
-        <option value="$PROJECT_DIR$/inf.txt" />
         <option value="$PROJECT_DIR$/App/view/admin/GridPersonV.js" />
         <option value="$PROJECT_DIR$/App/view/TabpanelAuthV.js" />
         <option value="$PROJECT_DIR$/App/view/TabRegV.js" />
         <option value="$PROJECT_DIR$/App/store/manage/GridSpecS.js" />
         <option value="$PROJECT_DIR$/App/store/user/KnowS.js" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/inf.txt" />
       </list>
     </option>
   </component>
@@ -671,10 +580,10 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17745416" sideWeight="0.6758939" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17745416" sideWeight="0.67321014" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14810751" sideWeight="0.32712457" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756633" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32678983" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794458" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -767,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inf.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="838">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/store/manage/GridSpecS.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="6" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="814">
@@ -790,14 +692,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="28" selection-start="165" selection-end="165" vertical-scroll-proportion="0.191067" vertical-offset="0" max-vertical-offset="806">
+        <state line="5" column="6" selection-start="64" selection-end="64" vertical-scroll-proportion="-3.548387" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="43" selection-start="207" selection-end="207" vertical-scroll-proportion="0.10513739" vertical-offset="0" max-vertical-offset="837">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/controller/TabpanelAuthC.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="347" selection-end="347" vertical-scroll-proportion="0.42718446" vertical-offset="0" max-vertical-offset="3806">
+        <state line="18" column="6" selection-start="366" selection-end="366" vertical-scroll-proportion="0.48058254" vertical-offset="0" max-vertical-offset="3806">
           <folding />
         </state>
       </provider>
